@@ -1,0 +1,3 @@
+[submodule "WeatherAPI-CSharp/doxygen-awesome-css"]
+	path = WeatherAPI-CSharp/doxygen-awesome-css
+	url = https://github.com/jothepro/doxygen-awesome-css.git
