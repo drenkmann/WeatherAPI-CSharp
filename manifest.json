@@ -1,0 +1,112 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/WeatherAPI-CSharp/WeatherAPI-CSharp/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WeatherAPI_CSharp.APIClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WeatherAPI_CSharp.APIClient.html",
+          "hash": "kMByyxH0AuotIRGeDCj8G8ptpp46uWbsHF7ibUjsTPo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WeatherAPI_CSharp.WeatherCurrent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WeatherAPI_CSharp.WeatherCurrent.html",
+          "hash": "bgVXD/XmtcEX5HGjyNPPvMMgtEULp+nvNbo9rxK32X8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WeatherAPI_CSharp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WeatherAPI_CSharp.html",
+          "hash": "jzbRXw0oU2sQ4O3VzDC87KcUF7crTO1DHhfzWll7/Gc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "4VG18c4emBQXrqV80O2kolpx5cTLFhoAxKI/wxk3MfU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "1hgzywSEfSQPBSq6zbwF+DwdmmRpZt4rCrwneZcS/64="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "V0fKf4pWbGAeIPyLHuy+Ligbx+aHtj+m3D3I35dXHGM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "+FPCLcvmNhVb9VLasYr6Tnep0PZtIA6V/UOJ0u+1RmE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "jnFmEmtNxcOjOctCBxSOagxq0dltES5TUArb936LD98="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "JFe9WxC1p8naRonvlk5RO/u25YZj3QN80JZpAxQOkVE="
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
