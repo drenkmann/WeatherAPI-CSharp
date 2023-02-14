@@ -1,5 +1,8 @@
 namespace WeatherAPI_CSharp;
 
+/// <summary>
+/// Data class that hold data parsed from api response
+/// </summary>
 public class WeatherCurrent
 {
 	/// <value>Local time when the real time data was updated.</value>
