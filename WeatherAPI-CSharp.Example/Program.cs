@@ -3,4 +3,4 @@
 var client = new APIClient("YOUR-API-KEY", true);
 
 var weather = await client.GetWeatherCurrentAsync("Berlin");
-Console.WriteLine($"Die Temperatur in Berlin betraegt {weather.TemperatureCelsius}C bei einer Windgeschwindingkeit von {weather.WindKph}km/h");
+Console.WriteLine($"The temperature in Berlin is {weather.TemperatureCelsius}C at a wind speed of {weather.WindKph}km/h");
