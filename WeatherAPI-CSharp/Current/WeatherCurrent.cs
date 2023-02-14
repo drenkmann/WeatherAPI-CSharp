@@ -2,54 +2,54 @@ namespace WeatherAPI_CSharp;
 
 public class WeatherCurrent
 {
-	/// <summary>Local time when the real time data was updated.</summary>
+	/// <value>Local time when the real time data was updated.</value>
 	public string LastUpdated { get; }
-	/// <summary>Local time when the real time data was updated in unix time.</summary>
+	/// <value>Local time when the real time data was updated in unix time.</value>
 	public long LastUpdatedEpoch { get; }
-	/// <summary>Temperature in celsius</summary>
+	/// <value>Temperature in celsius</value>
 	public double TemperatureCelsius { get; }
-	/// <summary>Temperature in fahrenheit</summary>
+	/// <value>Temperature in fahrenheit</value>
 	public double TemperatureFahrenheit { get; }
-	/// <summary>Feels like temperature in celsius</summary>
+	/// <value>Feels like temperature in celsius</value>
 	public double FeelsLikeCelsius { get; }
-	/// <summary>Feels like temperature in fahrenheit</summary>
+	/// <value>Feels like temperature in fahrenheit</value>
 	public double FeelsLikeFahrenheit { get; }
-	/// <summary>Weather condition text</summary>
+	/// <value>Weather condition text</value>
 	public string ConditionText { get; }
-	/// <summary>Weather icon url</summary>
+	/// <value>Weather icon url</value>
 	public string ConditionIconUrl { get; }
-	/// <summary>Weather condition unique code.</summary>
+	/// <value>Weather condition unique code.</value>
 	public int ConditionCode { get; }
-	/// <summary>Wind speed in kilometer per hour</summary>
+	/// <value>Wind speed in kilometer per hour</value>
 	public double WindKph { get; }
-	/// <summary>Wind speed in miles per hour</summary>
+	/// <value>Wind speed in miles per hour</value>
 	public double WindMph { get; }
-	/// <summary>Wind direction in degrees</summary>
+	/// <value>Wind direction in degrees</value>
 	public int WindDegree { get; }
-	/// <summary>Wind direction as 16 point compass. e.g.: NSW</summary>
+	/// <value>Wind direction as 16 point compass. e.g.: NSW</value>
 	public string WindDirection { get; }
-	/// <summary>Pressure in millibars</summary>
+	/// <value>Pressure in millibars</value>
 	public double PressureMb { get; }
-	/// <summary>Pressure in inches</summary>
+	/// <value>Pressure in inches</value>
 	public double PressureIn {get; }
-	/// <summary>Precipitation amount in millimeters</summary>
+	/// <value>Precipitation amount in millimeters</value>
 	public double PrecipitationMm { get; }
-	/// <summary>Precipitation amount in inches</summary>
+	/// <value>Precipitation amount in inches</value>
 	public double PrecipitationIn { get; }
-	/// <summary>Humidity as percentage</summary>
+	/// <value>Humidity as percentage</value>
 	public int Humidity { get; }
-	/// <summary>Cloud cover as percentage</summary>
+	/// <value>Cloud cover as percentage</value>
 	public int Clouds { get; }
-	/// <summary>Whether to show day condition icon or night icon</summary>
+	/// <value>Whether to show day condition icon or night icon</value>
 	public bool IsDay { get; }
-	/// <summary>UV Index</summary>
+	/// <value>UV Index</value>
 	public double UV { get; }
-	/// <summary>Wind gust in kilometer per hour</summary>
+	/// <value>Wind gust in kilometer per hour</value>
 	public double GustKph { get; }
-	/// <summary>Wind gust in miles per hour</summary>
+	/// <value>Wind gust in miles per hour</value>
 	public double GustMph { get; }
 
-	public WeatherCurrent(dynamic jsonData)
+	internal WeatherCurrent(dynamic jsonData)
 	{
 		LastUpdated = jsonData.last_updated;
 		LastUpdatedEpoch = jsonData.last_updated_epoch;
