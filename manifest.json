@@ -60,22 +60,33 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
+      "source_relative_path": "guidelines/codestyle.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "V0fKf4pWbGAeIPyLHuy+Ligbx+aHtj+m3D3I35dXHGM="
+          "relative_path": "guidelines/codestyle.html",
+          "hash": "YaTSxwqEyELChRKNAR+voN9G6w7oG1VuBop5HXWiUVI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guidelines/contribution.md",
+      "output": {
+        ".html": {
+          "relative_path": "guidelines/contribution.html",
+          "hash": "q8GsO/NPx1JVgiw1PoL1rSbBCtHm6jYwHlFbETRrauQ="
         }
       },
       "version": ""
     },
     {
       "type": "Toc",
-      "source_relative_path": "articles/toc.yml",
+      "source_relative_path": "guidelines/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "+FPCLcvmNhVb9VLasYr6Tnep0PZtIA6V/UOJ0u+1RmE="
+          "relative_path": "guidelines/toc.html",
+          "hash": "TwSrHb5GJRdbcnOhqMh1IrmBk7n/jr8v2UgJ8E+Gv7U="
         }
       },
       "version": ""
@@ -86,7 +97,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "U3eAFRSivzsPTaX/KDbiMjtesTNyUk7kc39MBxhJ8+M="
+          "hash": "kRyXJXyeLeGQ+lL1LlMWRIG8R8qg62M4KjuZUu5zecg="
         }
       },
       "version": ""
@@ -97,7 +108,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "eSZdZ2ESnfydv+14vLu0/YlLrDcnZPplfSfBksL5+7s="
+          "hash": "qiju9EDVbN3ouOVKaA020yxGryFwiDwaJExsnCuH728="
         }
       },
       "version": ""
