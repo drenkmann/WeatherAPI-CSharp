@@ -1,31 +1,13 @@
 # WeatherAPI CSharp
-This is a small library to be used with the weatherapi.com API
+This is a small wrapper library to be used with the weatherapi.com API.
 
-## Implemented functions
-### GetWeatherCurrentAsync
-Asynchronously get the current weather data. Returns WeatherCurrent object
+## API Implementation
+The currently implemented [endpoints](https://www.weatherapi.com/docs/) are:
+- [Current](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.WeatherCurrent.html) (current.json)
 
-Fields
-- LastUpdated
-- LastUpdatedEpoch
-- TemperatureCelsius
-- TemperatureFahrenheit
-- FeelsLikeCelsius
-- FeelsLikeFahrenheit
-- ConditionText
-- ConditionIconUrl
-- ConditionCode
-- WindKph
-- WindMph
-- WindDegree
-- WindDirection
-- PressureMb
-- PressureIn
-- PrecipitationMm
-- PrecipitationIn
-- Humidity
-- Clouds
-- IsDay
-- UV
-- GustKph
-- GustMph
+## Contribution
+For contribution guidelines, refer to the [documentation](https://skratymir.github.io/WeatherAPI-CSharp/).
+Coding guidelines can be found [here](https://skratymir.github.io/WeatherAPI-CSharp/guidelines/codestyle.html), and contribution guidelines can be found [here](https://skratymir.github.io/WeatherAPI-CSharp/guidelines/contribution.html).
+
+## License
+This software is licensed under the [MIT License](LICENSE.md).
