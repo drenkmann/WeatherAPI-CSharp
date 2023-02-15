@@ -1,7 +1,7 @@
 # WeatherAPI CSharp
 This is a small wrapper library to be used with the weatherapi.com API
 
-The full documentation can be found [here](https://skratymir.github.io/WeatherAPI-CSharp/api/index.html)
+The full documentation can be found [here](api/index.md)
 
 ## API Implementation
 Currently implemented endpoints
