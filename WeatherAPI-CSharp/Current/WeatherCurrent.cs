@@ -1,9 +1,11 @@
+using System.ComponentModel;
+
 namespace WeatherAPI_CSharp;
 
 /// <summary>
 /// Data class that hold data parsed from api response
 /// </summary>
-public class WeatherCurrent
+public readonly struct WeatherCurrent
 {
 	/// <value>Local time when the real time data was updated.</value>
 	public string LastUpdated { get; }
@@ -77,5 +79,19 @@ public class WeatherCurrent
 		UV = jsonData.uv;
 		GustKph = jsonData.gust_kph;
 		GustMph = jsonData.gust_mph;
+	}
+
+	public override string ToString()
+	{
+		string s = string.Empty;
+
+		foreach (PropertyDescriptor descriptor in TypeDescriptor.GetProperties(this))
+		{
+			string name = descriptor.Name;
+			object value = descriptor.GetValue(this) ?? "Null";
+			s += $"{name} = {value}\n";
+		}
+
+		return s;
 	}
 }

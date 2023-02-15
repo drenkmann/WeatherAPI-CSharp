@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherAPI-CSharp\WeatherAPI-CSharp.csproj" />
+  </ItemGroup>
+
 </Project>
