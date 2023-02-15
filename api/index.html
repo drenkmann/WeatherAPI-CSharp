@@ -70,10 +70,9 @@
 
 <h2 id="getting-started">Getting Started</h2>
 <p>To get started, you can take a look at the minimal setup down below.</p>
-<pre><code class="lang-csharp">// Program.cs
-using WeatherAPI_CSharp;
+<pre><code class="lang-csharp">using WeatherAPI_CSharp;
 
-var client = new APIClient(&quot;YOUR-API-KEY&quot;, true);
+var client = new APIClient(&quot;YOUR-API-KEY&quot;);
 
 var weather = await client.GetWeatherCurrentAsync(&quot;Berlin&quot;);
 Console.WriteLine($&quot;The temperature in Berlin is {weather.TemperatureCelsius}C at a wind speed of {weather.WindKph}km/h&quot;);

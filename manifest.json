@@ -20,7 +20,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WeatherAPI_CSharp.WeatherCurrent.html",
-          "hash": "pejQ8EwLvPvDGkCd3uraUpWr9HDS0QiDHrTcjqKPYXA="
+          "hash": "Eqa3RRPLUrZnkimxekjupTtKzo9L0YdHFOc94om35bI="
         }
       },
       "version": ""
@@ -31,7 +31,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WeatherAPI_CSharp.html",
-          "hash": "2s9see0AWlc+iCxt0rZlmM/BDY0UmwM6G0XiDPsvNcQ="
+          "hash": "VwrOLjhfSAIls56ARgT+OvXlqGixacMLA/286/MNW/U="
         }
       },
       "version": ""
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "3YnjF99pziCbmDsRaMI4nz4XmTeNGyFoz8Dp5ay5iYE="
+          "hash": "OnedDQkkaXShmZO0RSNWizFD1aL94rGX2Jd3+S5t21c="
         }
       },
       "version": ""
@@ -86,7 +86,18 @@
       "output": {
         ".html": {
           "relative_path": "guidelines/toc.html",
-          "hash": "TwSrHb5GJRdbcnOhqMh1IrmBk7n/jr8v2UgJ8E+Gv7U="
+          "hash": "RdItaPApE1JRiGInzZrnJpv1HnYUOuig0CW4Ip8HiGc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "guidelines/unittesting.md",
+      "output": {
+        ".html": {
+          "relative_path": "guidelines/unittesting.html",
+          "hash": "q8swL18aMthwas2vxDSIVaeuuE3aZ1UVnCayF+FImro="
         }
       },
       "version": ""

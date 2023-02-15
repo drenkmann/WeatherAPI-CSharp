@@ -288,6 +288,19 @@ references:
   isSpec: "True"
   fullName: WeatherAPI_CSharp.WeatherCurrent.TemperatureFahrenheit
   nameWithType: WeatherCurrent.TemperatureFahrenheit
+- uid: WeatherAPI_CSharp.WeatherCurrent.ToString
+  name: ToString()
+  href: api/WeatherAPI_CSharp.WeatherCurrent.html#WeatherAPI_CSharp_WeatherCurrent_ToString
+  commentId: M:WeatherAPI_CSharp.WeatherCurrent.ToString
+  fullName: WeatherAPI_CSharp.WeatherCurrent.ToString()
+  nameWithType: WeatherCurrent.ToString()
+- uid: WeatherAPI_CSharp.WeatherCurrent.ToString*
+  name: ToString
+  href: api/WeatherAPI_CSharp.WeatherCurrent.html#WeatherAPI_CSharp_WeatherCurrent_ToString_
+  commentId: Overload:WeatherAPI_CSharp.WeatherCurrent.ToString
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.WeatherCurrent.ToString
+  nameWithType: WeatherCurrent.ToString
 - uid: WeatherAPI_CSharp.WeatherCurrent.UV
   name: UV
   href: api/WeatherAPI_CSharp.WeatherCurrent.html#WeatherAPI_CSharp_WeatherCurrent_UV
