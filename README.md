@@ -1,3 +1,6 @@
+[![License](https://img.shields.io/badge/license-MIT-limegreen?style=for-the-badge)](./LICENSE.md)
+[![Documentation](https://img.shields.io/badge/DOCUMENTATION-blue?style=for-the-badge)](https://skratymir.github.io/WeatherAPI-CSharp/)
+
 # WeatherAPI CSharp
 This is a small wrapper library to be used with the weatherapi.com API.
 
