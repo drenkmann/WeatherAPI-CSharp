@@ -21,4 +21,20 @@ public class APITests
 		Assert.NotEmpty(weather.ConditionText);
 		Assert.InRange(weather.WindKph, 0, 200);
 	}
+
+	[Fact]
+	public async Task TestGetWeatherForecastAsync()
+	{
+		var client = new APIClient(apiKey, true);
+		var weather = await client.GetWeatherForecastDailyAsync("Berlin");
+
+		foreach (var forecast in weather)
+		{
+			output.WriteLine(forecast.ToString());
+
+			Assert.InRange(forecast.AvgTemperatureCelsius, -100, 100);
+			Assert.NotEmpty(forecast.ConditionText);
+			Assert.InRange(forecast.MaxWindKph, 0, 200);
+		}
+	}
 }
