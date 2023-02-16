@@ -6,3 +6,4 @@ The full documentation can be found [here](api/index.md)
 ## API Implementation
 Currently implemented endpoints
 - Current (current.json)
+- Daily forecast (forecast.json)
