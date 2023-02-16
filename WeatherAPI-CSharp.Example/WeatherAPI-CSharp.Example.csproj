@@ -1,9 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <ItemGroup>
-    <PackageReference Include="WeatherAPI-CSharp" Version="0.1.0" />
-  </ItemGroup>
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
@@ -13,5 +9,9 @@
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherAPI-CSharp\WeatherAPI-CSharp.csproj" />
+  </ItemGroup>
 
 </Project>
