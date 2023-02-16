@@ -18,7 +18,8 @@ Console.WriteLine($"The temperature in Berlin is {weather.TemperatureCelsius}C a
 
 ## API Implementation
 The currently implemented [endpoints](https://www.weatherapi.com/docs/) are:
-- [Current](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.WeatherCurrent.html) (current.json)
+- [Current](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.Forecast.html) (current.json)
+- [Forecast daily](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.ForecastDaily.html) (forecast.json)
 
 ## Contribution
 For contribution guidelines, refer to the [documentation](https://skratymir.github.io/WeatherAPI-CSharp/).
