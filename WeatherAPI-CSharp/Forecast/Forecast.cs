@@ -3,13 +3,13 @@ using System.ComponentModel;
 namespace WeatherAPI_CSharp;
 
 /// <summary>
-/// Data class that hold data parsed from api response
+/// Data class that holds data parsed from realtime api response
 /// </summary>
-public readonly struct WeatherCurrent
+public readonly struct Forecast
 {
-	/// <value>Local time when the real time data was updated.</value>
+	/// <value>Local time when the real time data was updated</value>
 	public string LastUpdated { get; }
-	/// <value>Local time when the real time data was updated in unix time.</value>
+	/// <value>Local time when the real time data was updated in unix time</value>
 	public long LastUpdatedEpoch { get; }
 	/// <value>Temperature in celsius</value>
 	public double TemperatureCelsius { get; }
@@ -23,7 +23,7 @@ public readonly struct WeatherCurrent
 	public string ConditionText { get; }
 	/// <value>Weather icon url</value>
 	public string ConditionIconUrl { get; }
-	/// <value>Weather condition unique code.</value>
+	/// <value>Weather condition unique code</value>
 	public int ConditionCode { get; }
 	/// <value>Wind speed in kilometer per hour</value>
 	public double WindKph { get; }
@@ -54,7 +54,7 @@ public readonly struct WeatherCurrent
 	/// <value>Wind gust in miles per hour</value>
 	public double GustMph { get; }
 
-	internal WeatherCurrent(dynamic jsonData)
+	internal Forecast(dynamic jsonData)
 	{
 		LastUpdated = jsonData.last_updated;
 		LastUpdatedEpoch = jsonData.last_updated_epoch;
@@ -81,6 +81,10 @@ public readonly struct WeatherCurrent
 		GustMph = jsonData.gust_mph;
 	}
 
+	/// <summary>
+	/// Generates string of all Members and their values
+	/// </summary>
+	/// <returns>Printable string of members and their values</returns>
 	public override string ToString()
 	{
 		string s = string.Empty;
