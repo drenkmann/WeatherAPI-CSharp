@@ -13,15 +13,15 @@ references:
   commentId: T:WeatherAPI_CSharp.APIClient
   fullName: WeatherAPI_CSharp.APIClient
   nameWithType: APIClient
-- uid: WeatherAPI_CSharp.APIClient.#ctor(System.String,System.Nullable{System.Boolean})
-  name: APIClient(string, bool?)
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient__ctor_System_String_System_Nullable_System_Boolean__
-  commentId: M:WeatherAPI_CSharp.APIClient.#ctor(System.String,System.Nullable{System.Boolean})
-  name.vb: New(String, Boolean?)
-  fullName: WeatherAPI_CSharp.APIClient.APIClient(string, bool?)
-  fullName.vb: WeatherAPI_CSharp.APIClient.New(String, Boolean?)
-  nameWithType: APIClient.APIClient(string, bool?)
-  nameWithType.vb: APIClient.New(String, Boolean?)
+- uid: WeatherAPI_CSharp.APIClient.#ctor(System.String,System.Boolean)
+  name: APIClient(string, bool)
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient__ctor_System_String_System_Boolean_
+  commentId: M:WeatherAPI_CSharp.APIClient.#ctor(System.String,System.Boolean)
+  name.vb: New(String, Boolean)
+  fullName: WeatherAPI_CSharp.APIClient.APIClient(string, bool)
+  fullName.vb: WeatherAPI_CSharp.APIClient.New(String, Boolean)
+  nameWithType: APIClient.APIClient(string, bool)
+  nameWithType.vb: APIClient.New(String, Boolean)
 - uid: WeatherAPI_CSharp.APIClient.#ctor*
   name: APIClient
   href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient__ctor_
