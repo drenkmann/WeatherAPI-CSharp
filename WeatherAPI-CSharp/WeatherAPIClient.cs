@@ -105,4 +105,53 @@ public class APIClient
 			return new ForecastDaily[]{default};
 		}
 	}
+
+	/// <summary>
+	/// Get weather forecast for the next <paramref name="hours" /> amount of hours at <paramref name="query" /> location
+	/// </summary>
+	/// <param name="query">Weather location</param>
+	/// <param name="hours">Amount of hours to get the forecast for</param>
+	/// <returns>Array of <see cref="ForecastHourly"/> classes</returns>
+	/// <remarks>Returns default on http error. In this case, ForecastHourly[0].Valid will be false.</remarks>
+	public async Task<ForecastHourly[]> GetWeatherForecastHourlyAsync(string query, int hours = 24)
+	{
+		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={Math.Ceiling(hours / 24d)}");
+
+		using var client = new HttpClient();
+
+		try
+		{
+			var jsonResponse = await client.GetStringAsync(uri);
+			dynamic jsonData = JsonConvert.DeserializeObject(jsonResponse)!;
+
+			if (jsonData is null)
+				throw new NullReferenceException();
+
+			var forecasts = new ForecastHourly[hours];
+			var index = 0;
+
+			foreach (var dailyData in jsonData.forecast.forecastday)
+			{
+				foreach (var hourlyData in dailyData.hour)
+				{
+					forecasts[index] = new ForecastHourly(hourlyData);
+					index++;
+				}
+			}
+
+			return forecasts;
+		}
+		catch(HttpRequestException e)
+		{
+			System.Diagnostics.Debug.WriteLine(e.StatusCode switch
+			{
+				HttpStatusCode.BadRequest => "Error 400 - Bad Request. Possible query error?",
+				HttpStatusCode.Unauthorized => "Error 401 - Unauthorized. Possible API key error?",
+				HttpStatusCode.Forbidden => "Error 403 - Forbidden. Possible API key error?",
+				HttpStatusCode.NotFound => "Error 404 - Not Found.",
+				_ => $"Error {e.StatusCode}"
+			});
+			return new ForecastHourly[]{default};
+		}
+	}
 }

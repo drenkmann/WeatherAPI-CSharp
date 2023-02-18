@@ -3,14 +3,14 @@ using System.ComponentModel;
 namespace WeatherAPI_CSharp;
 
 /// <summary>
-/// Data class that holds data parsed from forecast api response
+/// Data class that holds daily data parsed from forecast api response
 /// </summary>
 public readonly struct ForecastDaily
 {
 	/// <value>Whether or not the API request was successfull</value>
 	public bool Valid { get; }
 	/// <value>Forecast date</value>
-	public string Date { get; }
+	public DateTime Date { get; }
 	/// <value>Forecast date as unix time</value>
 	public long DateEpoch { get; }
 	/// <value>Maximum temperature in celsius for the day</value>
