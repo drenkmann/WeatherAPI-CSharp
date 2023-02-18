@@ -136,6 +136,8 @@ public class APIClient
 				{
 					forecasts[index] = new ForecastHourly(hourlyData);
 					index++;
+					if (index == hours)
+						return forecasts;
 				}
 			}
 
