@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WeatherAPI_CSharp.APIClient.html",
-          "hash": "fjmHfubg4EI78a7n9z2wNlHK7QLqg2Xut87Zl1qv0C8="
+          "hash": "a9Isi5C+VjM8z/ba6UCfRMM2LhYOHkyuUbNUPDrALeI="
         }
       },
       "version": ""
@@ -31,7 +31,18 @@
       "output": {
         ".html": {
           "relative_path": "api/WeatherAPI_CSharp.ForecastDaily.html",
-          "hash": "x1H7Ei88qixNPva3tyjozw/6xBJHY3D+4EqtQLEc95g="
+          "hash": "3hqBSnCHAke2doEuxKZVXrgB6KZLnxEybshBM+sJreE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WeatherAPI_CSharp.ForecastHourly.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WeatherAPI_CSharp.ForecastHourly.html",
+          "hash": "7eGz2t/ZHiU7xyVEfv1SbDx5Ev5aGfc9Xy8UO5cdBx4="
         }
       },
       "version": ""
@@ -42,7 +53,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WeatherAPI_CSharp.html",
-          "hash": "gmhKlPhq6LLivFMn7IW60kp4hH04GZtX2LfWtqkOaO0="
+          "hash": "p/kGsN8Urx0gzJvtL8X1Yacex8nk1a5ElXJzrzGdRbI="
         }
       },
       "version": ""
@@ -64,7 +75,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "7TDuCwEc07FYH+3s4JOsCPIm/xoXrZf7lSVUE4wl7KI="
+          "hash": "4CIAa6YyTkUGJmiWpFgHmVoMf8Wl/uVW3CKC1b35bLc="
         }
       },
       "version": ""
