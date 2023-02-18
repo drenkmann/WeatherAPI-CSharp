@@ -330,6 +330,19 @@ references:
   isSpec: "True"
   fullName: WeatherAPI_CSharp.Forecast.UV
   nameWithType: Forecast.UV
+- uid: WeatherAPI_CSharp.Forecast.Valid
+  name: Valid
+  href: api/WeatherAPI_CSharp.Forecast.html#WeatherAPI_CSharp_Forecast_Valid
+  commentId: P:WeatherAPI_CSharp.Forecast.Valid
+  fullName: WeatherAPI_CSharp.Forecast.Valid
+  nameWithType: Forecast.Valid
+- uid: WeatherAPI_CSharp.Forecast.Valid*
+  name: Valid
+  href: api/WeatherAPI_CSharp.Forecast.html#WeatherAPI_CSharp_Forecast_Valid_
+  commentId: Overload:WeatherAPI_CSharp.Forecast.Valid
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.Forecast.Valid
+  nameWithType: Forecast.Valid
 - uid: WeatherAPI_CSharp.Forecast.WindDegree
   name: WindDegree
   href: api/WeatherAPI_CSharp.Forecast.html#WeatherAPI_CSharp_Forecast_WindDegree
@@ -687,6 +700,19 @@ references:
   isSpec: "True"
   fullName: WeatherAPI_CSharp.ForecastDaily.UV
   nameWithType: ForecastDaily.UV
+- uid: WeatherAPI_CSharp.ForecastDaily.Valid
+  name: Valid
+  href: api/WeatherAPI_CSharp.ForecastDaily.html#WeatherAPI_CSharp_ForecastDaily_Valid
+  commentId: P:WeatherAPI_CSharp.ForecastDaily.Valid
+  fullName: WeatherAPI_CSharp.ForecastDaily.Valid
+  nameWithType: ForecastDaily.Valid
+- uid: WeatherAPI_CSharp.ForecastDaily.Valid*
+  name: Valid
+  href: api/WeatherAPI_CSharp.ForecastDaily.html#WeatherAPI_CSharp_ForecastDaily_Valid_
+  commentId: Overload:WeatherAPI_CSharp.ForecastDaily.Valid
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.ForecastDaily.Valid
+  nameWithType: ForecastDaily.Valid
 - uid: WeatherAPI_CSharp.ForecastDaily.WillItRain
   name: WillItRain
   href: api/WeatherAPI_CSharp.ForecastDaily.html#WeatherAPI_CSharp_ForecastDaily_WillItRain
