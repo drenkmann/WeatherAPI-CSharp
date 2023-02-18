@@ -12,8 +12,9 @@ jobs:
     - name: Dotnet Setup
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.x
+        dotnet-version: 6.0.301
 
+    - run: dotnet new globaljson --sdk-version 6.0.301
     - run: dotnet build
     - run: dotnet tool update -g docfx
     - run: docfx docs/docfx.json
