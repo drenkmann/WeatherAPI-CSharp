@@ -17,13 +17,25 @@ public class APITests
 
 		output.WriteLine(weather.ToString());
 
+		Assert.True(weather.Valid);
 		Assert.InRange(weather.TemperatureCelsius, -100, 100);
 		Assert.NotEmpty(weather.ConditionText);
 		Assert.InRange(weather.WindKph, 0, 200);
 	}
 
 	[Fact]
-	public async Task TestGetWeatherForecastAsync()
+	public async Task TestGetWeatherCurrentAsyncFail()
+	{
+		var client = new APIClient(apiKey, true);
+		var weather = await client.GetWeatherCurrentAsync("qwerpoiuqweropiuwqer9872345987");
+
+		output.WriteLine(weather.ToString());
+
+		Assert.False(weather.Valid);
+	}
+
+	[Fact]
+	public async Task TestGetWeatherForecastDailyAsync()
 	{
 		var client = new APIClient(apiKey, true);
 		var weather = await client.GetWeatherForecastDailyAsync("Berlin");
@@ -32,9 +44,24 @@ public class APITests
 		{
 			output.WriteLine(forecast.ToString());
 
+			Assert.True(forecast.Valid);
 			Assert.InRange(forecast.AvgTemperatureCelsius, -100, 100);
 			Assert.NotEmpty(forecast.ConditionText);
 			Assert.InRange(forecast.MaxWindKph, 0, 200);
+		}
+	}
+
+	[Fact]
+	public async Task TestGetWeatherForecastDailyAsyncFail()
+	{
+		var client = new APIClient(apiKey, true);
+		var weather = await client.GetWeatherForecastDailyAsync("qwerpoiuqweropiuwqer9872345987");
+
+		foreach (var forecast in weather)
+		{
+			output.WriteLine(forecast.ToString());
+
+			Assert.False(forecast.Valid);
 		}
 	}
 }

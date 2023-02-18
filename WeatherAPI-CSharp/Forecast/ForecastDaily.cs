@@ -7,6 +7,8 @@ namespace WeatherAPI_CSharp;
 /// </summary>
 public readonly struct ForecastDaily
 {
+	/// <value>Whether or not the API request was successfull</value>
+	public bool Valid { get; }
 	/// <value>Forecast date</value>
 	public string Date { get; }
 	/// <value>Forecast date as unix time</value>
@@ -58,6 +60,7 @@ public readonly struct ForecastDaily
 
 	internal ForecastDaily(dynamic jsonData)
 	{
+		Valid = true;
 		Date = jsonData.date;
 		DateEpoch = jsonData.date_epoch;
 		MaxTemperatureCelsius = jsonData.day.maxtemp_c;
