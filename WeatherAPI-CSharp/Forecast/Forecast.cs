@@ -7,6 +7,8 @@ namespace WeatherAPI_CSharp;
 /// </summary>
 public readonly struct Forecast
 {
+	/// <value>Whether or not the API request was successfull</value>
+	public bool Valid { get; }
 	/// <value>Local time when the real time data was updated</value>
 	public string LastUpdated { get; }
 	/// <value>Local time when the real time data was updated in unix time</value>
@@ -56,6 +58,7 @@ public readonly struct Forecast
 
 	internal Forecast(dynamic jsonData)
 	{
+		Valid = true;
 		LastUpdated = jsonData.last_updated;
 		LastUpdatedEpoch = jsonData.last_updated_epoch;
 		TemperatureCelsius = jsonData.temp_c;
