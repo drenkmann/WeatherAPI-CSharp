@@ -19,10 +19,10 @@ public class APIClient
 	/// </summary>
 	/// <param name="apiKey">Your API key</param>
 	/// <param name="useHttps"><c>true</c>: Use https, <c>false</c>: Use http</param>
-	public APIClient(string apiKey, bool? useHttps)
+	public APIClient(string apiKey, bool useHttps = false)
 	{
 		_apiKey = apiKey;
-		_useHttps = useHttps ?? false;
+		_useHttps = useHttps;
 	}
 
 	/// <summary>
