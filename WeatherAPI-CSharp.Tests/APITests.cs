@@ -64,4 +64,35 @@ public class APITests
 			Assert.False(forecast.Valid);
 		}
 	}
+
+	[Fact]
+	public async Task TestGetWeatherForecastHourlyAsync()
+	{
+		var client = new APIClient(apiKey, true);
+		var weather = await client.GetWeatherForecastHourlyAsync("Berlin");
+
+		foreach (var forecast in weather)
+		{
+			output.WriteLine(forecast.ToString());
+
+			Assert.True(forecast.Valid);
+			Assert.InRange(forecast.TemperatureCelsius, -100, 100);
+			Assert.NotEmpty(forecast.ConditionText);
+			Assert.InRange(forecast.WindKph, 0, 200);
+		}
+	}
+
+	[Fact]
+	public async Task TestGetWeatherForecastHourlyAsyncFail()
+	{
+		var client = new APIClient(apiKey, true);
+		var weather = await client.GetWeatherForecastHourlyAsync("qwerpoiuqweropiuwqer9872345987");
+
+		foreach (var forecast in weather)
+		{
+			output.WriteLine(forecast.ToString());
+
+			Assert.False(forecast.Valid);
+		}
+	}
 }
