@@ -1,5 +1,6 @@
 [![License](https://img.shields.io/badge/license-MIT-limegreen?style=for-the-badge)](./LICENSE.md)
 [![Documentation](https://img.shields.io/badge/DOCUMENTATION-blue?style=for-the-badge)](https://skratymir.github.io/WeatherAPI-CSharp/)
+[![Nuget](https://img.shields.io/nuget/v/WeatherAPI-CSharp?label=Version&style=for-the-badge)](https://www.nuget.org/packages/WeatherAPI-CSharp)
 
 # WeatherAPI CSharp
 This is a small wrapper library to be used with the weatherapi.com API. It is a much simpler alternative to the [official]("https://github.com/weatherapicom/csharp") library, with the goal to make building any kind of weather app much simpler. There are no complicated classes are functions to worry about, you just create your client, call the function, and get perfectly parsed, easily acessable data returned, no need for verbose code.
