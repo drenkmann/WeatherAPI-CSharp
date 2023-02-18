@@ -21,6 +21,7 @@ Console.WriteLine($"The temperature in Berlin is {weather.TemperatureCelsius}C a
 The currently implemented [endpoints](https://www.weatherapi.com/docs/) are:
 - [Current](https://underthefoxtree.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.Forecast.html) (current.json)
 - [Forecast daily](https://underthefoxtree.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.ForecastDaily.html) (forecast.json)
+- [Forecast hourly](https://underthefoxtree.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.ForecastHourly.html) (forecast.json)
 
 ## Contribution
 For contribution guidelines, refer to the [documentation](https://underthefoxtree.github.io/WeatherAPI-CSharp/).
