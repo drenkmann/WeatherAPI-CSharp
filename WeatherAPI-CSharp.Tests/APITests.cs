@@ -13,7 +13,7 @@ public class APITests
 	public async Task TestGetWeatherCurrentAsync()
 	{
 		var client = new APIClient(apiKey, true);
-		var weather = await client.GetWeatherCurrentAsync("Berlin");
+		var weather = await client.GetWeatherCurrentAsync("Berlin", true);
 
 		output.WriteLine(weather.ToString());
 
@@ -41,7 +41,7 @@ public class APITests
 	{
 		var days = 5;
 		var client = new APIClient(apiKey, true);
-		var weather = await client.GetWeatherForecastDailyAsync("Berlin", days);
+		var weather = await client.GetWeatherForecastDailyAsync("Berlin", days, true);
 
 		Assert.Equal(days, weather.Length);
 
@@ -79,7 +79,7 @@ public class APITests
 	{
 		var hours = 24 * 12;
 		var client = new APIClient(apiKey, true);
-		var weather = await client.GetWeatherForecastHourlyAsync("Berlin", hours);
+		var weather = await client.GetWeatherForecastHourlyAsync("Berlin", hours, true);
 
 		Assert.Equal(hours, weather.Length);
 

@@ -58,7 +58,7 @@ public readonly struct Forecast
 	/// <value><see cref="AirQuality"/> data</value>
 	public AirQuality AirQuality { get; }
 
-	internal Forecast(dynamic jsonData)
+	internal Forecast(dynamic jsonData, bool airQuality)
 	{
 		Valid = true;
 		LastUpdated = jsonData.last_updated;
@@ -84,7 +84,12 @@ public readonly struct Forecast
 		UV = jsonData.uv;
 		GustKph = jsonData.gust_kph;
 		GustMph = jsonData.gust_mph;
-		AirQuality = new AirQuality(jsonData.air_quality);
+		if (airQuality)
+		{
+			AirQuality = new AirQuality(jsonData.air_quality);
+			return;
+		}
+		AirQuality = default;
 	}
 
 	/// <summary>
