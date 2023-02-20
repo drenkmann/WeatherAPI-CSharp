@@ -18,6 +18,7 @@ public class APITests
 		output.WriteLine(weather.ToString());
 
 		Assert.True(weather.Valid);
+		Assert.True(weather.AirQuality.Valid);
 		Assert.InRange(weather.TemperatureCelsius, -100, 100);
 		Assert.NotEmpty(weather.ConditionText);
 		Assert.InRange(weather.WindKph, 0, 200);
@@ -32,6 +33,7 @@ public class APITests
 		output.WriteLine(weather.ToString());
 
 		Assert.False(weather.Valid);
+		Assert.False(weather.AirQuality.Valid);
 	}
 
 	[Fact]
@@ -43,14 +45,17 @@ public class APITests
 
 		Assert.Equal(days, weather.Length);
 
+		int index = 0;
 		foreach (var forecast in weather)
 		{
 			output.WriteLine(forecast.ToString());
 
 			Assert.True(forecast.Valid);
+			Assert.True(forecast.AirQuality.Valid || index > 2);
 			Assert.InRange(forecast.AvgTemperatureCelsius, -100, 100);
 			Assert.NotEmpty(forecast.ConditionText);
 			Assert.InRange(forecast.MaxWindKph, 0, 200);
+			index++;
 		}
 	}
 
@@ -65,26 +70,30 @@ public class APITests
 			output.WriteLine(forecast.ToString());
 
 			Assert.False(forecast.Valid);
+			Assert.False(forecast.AirQuality.Valid);
 		}
 	}
 
 	[Fact]
 	public async Task TestGetWeatherForecastHourlyAsync()
 	{
-		var hours = 18;
+		var hours = 24 * 12;
 		var client = new APIClient(apiKey, true);
 		var weather = await client.GetWeatherForecastHourlyAsync("Berlin", hours);
 
 		Assert.Equal(hours, weather.Length);
 
+		int index = 0;
 		foreach (var forecast in weather)
 		{
 			output.WriteLine(forecast.ToString());
 
 			Assert.True(forecast.Valid);
+			Assert.True(forecast.AirQuality.Valid || Math.Ceiling(index / 24d) > 2);
 			Assert.InRange(forecast.TemperatureCelsius, -100, 100);
 			Assert.NotEmpty(forecast.ConditionText);
 			Assert.InRange(forecast.WindKph, 0, 200);
+			index++;
 		}
 	}
 
@@ -99,6 +108,7 @@ public class APITests
 			output.WriteLine(forecast.ToString());
 
 			Assert.False(forecast.Valid);
+			Assert.False(forecast.AirQuality.Valid);
 		}
 	}
 }

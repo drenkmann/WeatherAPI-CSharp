@@ -79,8 +79,10 @@ public readonly struct ForecastHourly
 	public double GustMph { get; }
 	/// <value>UV Index</value>
 	public double UV { get; }
+	/// <value><see cref="AirQuality"/> data</value>
+	public AirQuality AirQuality { get; }
 
-	internal ForecastHourly(dynamic jsonData)
+	internal ForecastHourly(dynamic jsonData, bool airQuality)
 	{
 		Valid = true;
 		Date = jsonData.time;
@@ -118,6 +120,12 @@ public readonly struct ForecastHourly
 		GustKph = jsonData.gust_kph;
 		GustMph = jsonData.gust_mph;
 		UV = jsonData.uv;
+		if (airQuality)
+		{
+			AirQuality = new AirQuality(jsonData.air_quality);
+			return;
+		}
+		AirQuality = default;
 	}
 
 	/// <summary>
