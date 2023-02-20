@@ -9,7 +9,18 @@
       "output": {
         ".html": {
           "relative_path": "api/WeatherAPI_CSharp.APIClient.html",
-          "hash": "a9Isi5C+VjM8z/ba6UCfRMM2LhYOHkyuUbNUPDrALeI="
+          "hash": "SsNDM+K9akg492Vv3drMgxwtFJGdcaW6j6N/etZkp+w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WeatherAPI_CSharp.AirQuality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WeatherAPI_CSharp.AirQuality.html",
+          "hash": "qNc31fSEPBGy+oT/lwmT2ICwg8OGtkX6znsblss9/6o="
         }
       },
       "version": ""
@@ -20,7 +31,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WeatherAPI_CSharp.Forecast.html",
-          "hash": "ZcPuxsVirIbhtyc9bNyuqT3zsDpii3Q/3GQVKFRKU8I="
+          "hash": "HML9TebQOoBLbv6+Vx13HFKcbj9Lu9+Q64nzTmrUwiY="
         }
       },
       "version": ""
@@ -31,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WeatherAPI_CSharp.ForecastDaily.html",
-          "hash": "3hqBSnCHAke2doEuxKZVXrgB6KZLnxEybshBM+sJreE="
+          "hash": "5tO9Ed1hitwFSWmM1Y61zvHngIsakqLDjE/VorbBzU8="
         }
       },
       "version": ""
@@ -42,7 +53,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WeatherAPI_CSharp.ForecastHourly.html",
-          "hash": "7eGz2t/ZHiU7xyVEfv1SbDx5Ev5aGfc9Xy8UO5cdBx4="
+          "hash": "0cXK4dovWsp6eunIBeZ5KsVwNNBJYpfwCAAVmx3nC8Q="
         }
       },
       "version": ""
@@ -53,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WeatherAPI_CSharp.html",
-          "hash": "p/kGsN8Urx0gzJvtL8X1Yacex8nk1a5ElXJzrzGdRbI="
+          "hash": "k7of1T5HgjcTu/VmJbm4tPMzx9//P0b+lSiqcKVESkY="
         }
       },
       "version": ""
@@ -75,7 +86,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "4CIAa6YyTkUGJmiWpFgHmVoMf8Wl/uVW3CKC1b35bLc="
+          "hash": "7q91jb1gkH8c8Sf1Ic//ki+yxPGhKt634NkOd5IddYY="
         }
       },
       "version": ""

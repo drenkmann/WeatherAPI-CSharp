@@ -7,6 +7,155 @@ references:
   commentId: N:WeatherAPI_CSharp
   fullName: WeatherAPI_CSharp
   nameWithType: WeatherAPI_CSharp
+- uid: WeatherAPI_CSharp.AirQuality
+  name: AirQuality
+  href: api/WeatherAPI_CSharp.AirQuality.html
+  commentId: T:WeatherAPI_CSharp.AirQuality
+  fullName: WeatherAPI_CSharp.AirQuality
+  nameWithType: AirQuality
+- uid: WeatherAPI_CSharp.AirQuality.CO
+  name: CO
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_CO
+  commentId: P:WeatherAPI_CSharp.AirQuality.CO
+  fullName: WeatherAPI_CSharp.AirQuality.CO
+  nameWithType: AirQuality.CO
+- uid: WeatherAPI_CSharp.AirQuality.CO*
+  name: CO
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_CO_
+  commentId: Overload:WeatherAPI_CSharp.AirQuality.CO
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.AirQuality.CO
+  nameWithType: AirQuality.CO
+- uid: WeatherAPI_CSharp.AirQuality.GbDefraIndex
+  name: GbDefraIndex
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_GbDefraIndex
+  commentId: P:WeatherAPI_CSharp.AirQuality.GbDefraIndex
+  fullName: WeatherAPI_CSharp.AirQuality.GbDefraIndex
+  nameWithType: AirQuality.GbDefraIndex
+- uid: WeatherAPI_CSharp.AirQuality.GbDefraIndex*
+  name: GbDefraIndex
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_GbDefraIndex_
+  commentId: Overload:WeatherAPI_CSharp.AirQuality.GbDefraIndex
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.AirQuality.GbDefraIndex
+  nameWithType: AirQuality.GbDefraIndex
+- uid: WeatherAPI_CSharp.AirQuality.GbIndexMeaning
+  name: GbIndexMeaning
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_GbIndexMeaning
+  commentId: P:WeatherAPI_CSharp.AirQuality.GbIndexMeaning
+  fullName: WeatherAPI_CSharp.AirQuality.GbIndexMeaning
+  nameWithType: AirQuality.GbIndexMeaning
+- uid: WeatherAPI_CSharp.AirQuality.GbIndexMeaning*
+  name: GbIndexMeaning
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_GbIndexMeaning_
+  commentId: Overload:WeatherAPI_CSharp.AirQuality.GbIndexMeaning
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.AirQuality.GbIndexMeaning
+  nameWithType: AirQuality.GbIndexMeaning
+- uid: WeatherAPI_CSharp.AirQuality.NO2
+  name: NO2
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_NO2
+  commentId: P:WeatherAPI_CSharp.AirQuality.NO2
+  fullName: WeatherAPI_CSharp.AirQuality.NO2
+  nameWithType: AirQuality.NO2
+- uid: WeatherAPI_CSharp.AirQuality.NO2*
+  name: NO2
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_NO2_
+  commentId: Overload:WeatherAPI_CSharp.AirQuality.NO2
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.AirQuality.NO2
+  nameWithType: AirQuality.NO2
+- uid: WeatherAPI_CSharp.AirQuality.O3
+  name: O3
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_O3
+  commentId: P:WeatherAPI_CSharp.AirQuality.O3
+  fullName: WeatherAPI_CSharp.AirQuality.O3
+  nameWithType: AirQuality.O3
+- uid: WeatherAPI_CSharp.AirQuality.O3*
+  name: O3
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_O3_
+  commentId: Overload:WeatherAPI_CSharp.AirQuality.O3
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.AirQuality.O3
+  nameWithType: AirQuality.O3
+- uid: WeatherAPI_CSharp.AirQuality.PM10
+  name: PM10
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_PM10
+  commentId: P:WeatherAPI_CSharp.AirQuality.PM10
+  fullName: WeatherAPI_CSharp.AirQuality.PM10
+  nameWithType: AirQuality.PM10
+- uid: WeatherAPI_CSharp.AirQuality.PM10*
+  name: PM10
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_PM10_
+  commentId: Overload:WeatherAPI_CSharp.AirQuality.PM10
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.AirQuality.PM10
+  nameWithType: AirQuality.PM10
+- uid: WeatherAPI_CSharp.AirQuality.PM25
+  name: PM25
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_PM25
+  commentId: P:WeatherAPI_CSharp.AirQuality.PM25
+  fullName: WeatherAPI_CSharp.AirQuality.PM25
+  nameWithType: AirQuality.PM25
+- uid: WeatherAPI_CSharp.AirQuality.PM25*
+  name: PM25
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_PM25_
+  commentId: Overload:WeatherAPI_CSharp.AirQuality.PM25
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.AirQuality.PM25
+  nameWithType: AirQuality.PM25
+- uid: WeatherAPI_CSharp.AirQuality.SO2
+  name: SO2
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_SO2
+  commentId: P:WeatherAPI_CSharp.AirQuality.SO2
+  fullName: WeatherAPI_CSharp.AirQuality.SO2
+  nameWithType: AirQuality.SO2
+- uid: WeatherAPI_CSharp.AirQuality.SO2*
+  name: SO2
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_SO2_
+  commentId: Overload:WeatherAPI_CSharp.AirQuality.SO2
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.AirQuality.SO2
+  nameWithType: AirQuality.SO2
+- uid: WeatherAPI_CSharp.AirQuality.UsEpaIndex
+  name: UsEpaIndex
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_UsEpaIndex
+  commentId: P:WeatherAPI_CSharp.AirQuality.UsEpaIndex
+  fullName: WeatherAPI_CSharp.AirQuality.UsEpaIndex
+  nameWithType: AirQuality.UsEpaIndex
+- uid: WeatherAPI_CSharp.AirQuality.UsEpaIndex*
+  name: UsEpaIndex
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_UsEpaIndex_
+  commentId: Overload:WeatherAPI_CSharp.AirQuality.UsEpaIndex
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.AirQuality.UsEpaIndex
+  nameWithType: AirQuality.UsEpaIndex
+- uid: WeatherAPI_CSharp.AirQuality.UsIndexMeaning
+  name: UsIndexMeaning
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_UsIndexMeaning
+  commentId: P:WeatherAPI_CSharp.AirQuality.UsIndexMeaning
+  fullName: WeatherAPI_CSharp.AirQuality.UsIndexMeaning
+  nameWithType: AirQuality.UsIndexMeaning
+- uid: WeatherAPI_CSharp.AirQuality.UsIndexMeaning*
+  name: UsIndexMeaning
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_UsIndexMeaning_
+  commentId: Overload:WeatherAPI_CSharp.AirQuality.UsIndexMeaning
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.AirQuality.UsIndexMeaning
+  nameWithType: AirQuality.UsIndexMeaning
+- uid: WeatherAPI_CSharp.AirQuality.Valid
+  name: Valid
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_Valid
+  commentId: P:WeatherAPI_CSharp.AirQuality.Valid
+  fullName: WeatherAPI_CSharp.AirQuality.Valid
+  nameWithType: AirQuality.Valid
+- uid: WeatherAPI_CSharp.AirQuality.Valid*
+  name: Valid
+  href: api/WeatherAPI_CSharp.AirQuality.html#WeatherAPI_CSharp_AirQuality_Valid_
+  commentId: Overload:WeatherAPI_CSharp.AirQuality.Valid
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.AirQuality.Valid
+  nameWithType: AirQuality.Valid
 - uid: WeatherAPI_CSharp.APIClient
   name: APIClient
   href: api/WeatherAPI_CSharp.APIClient.html
@@ -32,15 +181,15 @@ references:
   fullName.vb: WeatherAPI_CSharp.APIClient.New
   nameWithType: APIClient.APIClient
   nameWithType.vb: APIClient.New
-- uid: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String)
-  name: GetWeatherCurrentAsync(string)
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_System_String_
-  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String)
-  name.vb: GetWeatherCurrentAsync(String)
-  fullName: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(string)
-  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(String)
-  nameWithType: APIClient.GetWeatherCurrentAsync(string)
-  nameWithType.vb: APIClient.GetWeatherCurrentAsync(String)
+- uid: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String,System.Boolean)
+  name: GetWeatherCurrentAsync(string, bool)
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_System_String_System_Boolean_
+  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String,System.Boolean)
+  name.vb: GetWeatherCurrentAsync(String, Boolean)
+  fullName: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(string, bool)
+  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(String, Boolean)
+  nameWithType: APIClient.GetWeatherCurrentAsync(string, bool)
+  nameWithType.vb: APIClient.GetWeatherCurrentAsync(String, Boolean)
 - uid: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync*
   name: GetWeatherCurrentAsync
   href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_
@@ -48,15 +197,15 @@ references:
   isSpec: "True"
   fullName: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync
   nameWithType: APIClient.GetWeatherCurrentAsync
-- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32)
-  name: GetWeatherForecastDailyAsync(string, int)
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_
-  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32)
-  name.vb: GetWeatherForecastDailyAsync(String, Integer)
-  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(string, int)
-  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(String, Integer)
-  nameWithType: APIClient.GetWeatherForecastDailyAsync(string, int)
-  nameWithType.vb: APIClient.GetWeatherForecastDailyAsync(String, Integer)
+- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32,System.Boolean)
+  name: GetWeatherForecastDailyAsync(string, int, bool)
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_System_Boolean_
+  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32,System.Boolean)
+  name.vb: GetWeatherForecastDailyAsync(String, Integer, Boolean)
+  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(string, int, bool)
+  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(String, Integer, Boolean)
+  nameWithType: APIClient.GetWeatherForecastDailyAsync(string, int, bool)
+  nameWithType.vb: APIClient.GetWeatherForecastDailyAsync(String, Integer, Boolean)
 - uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync*
   name: GetWeatherForecastDailyAsync
   href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_
@@ -64,15 +213,15 @@ references:
   isSpec: "True"
   fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync
   nameWithType: APIClient.GetWeatherForecastDailyAsync
-- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32)
-  name: GetWeatherForecastHourlyAsync(string, int)
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_
-  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32)
-  name.vb: GetWeatherForecastHourlyAsync(String, Integer)
-  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(string, int)
-  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(String, Integer)
-  nameWithType: APIClient.GetWeatherForecastHourlyAsync(string, int)
-  nameWithType.vb: APIClient.GetWeatherForecastHourlyAsync(String, Integer)
+- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32,System.Boolean)
+  name: GetWeatherForecastHourlyAsync(string, int, bool)
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_System_Boolean_
+  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32,System.Boolean)
+  name.vb: GetWeatherForecastHourlyAsync(String, Integer, Boolean)
+  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(string, int, bool)
+  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(String, Integer, Boolean)
+  nameWithType: APIClient.GetWeatherForecastHourlyAsync(string, int, bool)
+  nameWithType.vb: APIClient.GetWeatherForecastHourlyAsync(String, Integer, Boolean)
 - uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync*
   name: GetWeatherForecastHourlyAsync
   href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_
@@ -86,6 +235,19 @@ references:
   commentId: T:WeatherAPI_CSharp.Forecast
   fullName: WeatherAPI_CSharp.Forecast
   nameWithType: Forecast
+- uid: WeatherAPI_CSharp.Forecast.AirQuality
+  name: AirQuality
+  href: api/WeatherAPI_CSharp.Forecast.html#WeatherAPI_CSharp_Forecast_AirQuality
+  commentId: P:WeatherAPI_CSharp.Forecast.AirQuality
+  fullName: WeatherAPI_CSharp.Forecast.AirQuality
+  nameWithType: Forecast.AirQuality
+- uid: WeatherAPI_CSharp.Forecast.AirQuality*
+  name: AirQuality
+  href: api/WeatherAPI_CSharp.Forecast.html#WeatherAPI_CSharp_Forecast_AirQuality_
+  commentId: Overload:WeatherAPI_CSharp.Forecast.AirQuality
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.Forecast.AirQuality
+  nameWithType: Forecast.AirQuality
 - uid: WeatherAPI_CSharp.Forecast.Clouds
   name: Clouds
   href: api/WeatherAPI_CSharp.Forecast.html#WeatherAPI_CSharp_Forecast_Clouds
@@ -417,6 +579,19 @@ references:
   commentId: T:WeatherAPI_CSharp.ForecastDaily
   fullName: WeatherAPI_CSharp.ForecastDaily
   nameWithType: ForecastDaily
+- uid: WeatherAPI_CSharp.ForecastDaily.AirQuality
+  name: AirQuality
+  href: api/WeatherAPI_CSharp.ForecastDaily.html#WeatherAPI_CSharp_ForecastDaily_AirQuality
+  commentId: P:WeatherAPI_CSharp.ForecastDaily.AirQuality
+  fullName: WeatherAPI_CSharp.ForecastDaily.AirQuality
+  nameWithType: ForecastDaily.AirQuality
+- uid: WeatherAPI_CSharp.ForecastDaily.AirQuality*
+  name: AirQuality
+  href: api/WeatherAPI_CSharp.ForecastDaily.html#WeatherAPI_CSharp_ForecastDaily_AirQuality_
+  commentId: Overload:WeatherAPI_CSharp.ForecastDaily.AirQuality
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.ForecastDaily.AirQuality
+  nameWithType: ForecastDaily.AirQuality
 - uid: WeatherAPI_CSharp.ForecastDaily.AvgHumidity
   name: AvgHumidity
   href: api/WeatherAPI_CSharp.ForecastDaily.html#WeatherAPI_CSharp_ForecastDaily_AvgHumidity
@@ -761,6 +936,19 @@ references:
   commentId: T:WeatherAPI_CSharp.ForecastHourly
   fullName: WeatherAPI_CSharp.ForecastHourly
   nameWithType: ForecastHourly
+- uid: WeatherAPI_CSharp.ForecastHourly.AirQuality
+  name: AirQuality
+  href: api/WeatherAPI_CSharp.ForecastHourly.html#WeatherAPI_CSharp_ForecastHourly_AirQuality
+  commentId: P:WeatherAPI_CSharp.ForecastHourly.AirQuality
+  fullName: WeatherAPI_CSharp.ForecastHourly.AirQuality
+  nameWithType: ForecastHourly.AirQuality
+- uid: WeatherAPI_CSharp.ForecastHourly.AirQuality*
+  name: AirQuality
+  href: api/WeatherAPI_CSharp.ForecastHourly.html#WeatherAPI_CSharp_ForecastHourly_AirQuality_
+  commentId: Overload:WeatherAPI_CSharp.ForecastHourly.AirQuality
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.ForecastHourly.AirQuality
+  nameWithType: ForecastHourly.AirQuality
 - uid: WeatherAPI_CSharp.ForecastHourly.ChanceOfRain
   name: ChanceOfRain
   href: api/WeatherAPI_CSharp.ForecastHourly.html#WeatherAPI_CSharp_ForecastHourly_ChanceOfRain

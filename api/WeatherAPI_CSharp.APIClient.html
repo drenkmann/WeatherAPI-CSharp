@@ -156,19 +156,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/new/master/apiSpec/new?filename=WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_System_String_.md&amp;value=---%0Auid%3A%20WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/new/master/apiSpec/new?filename=WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/blob/master/WeatherAPI-CSharp/WeatherAPIClient.cs/#L34">View Source</a>
   </span>
   <a id="WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync*"></a>
-  <h4 id="WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_System_String_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String)">GetWeatherCurrentAsync(string)</h4>
+  <h4 id="WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_System_String_System_Boolean_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String,System.Boolean)">GetWeatherCurrentAsync(string, bool)</h4>
   <div class="markdown level1 summary"><p>Get Current weather at <code data-dev-comment-type="paramref" class="paramref">query</code> location</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Forecast&gt; GetWeatherCurrentAsync(string query)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Forecast&gt; GetWeatherCurrentAsync(string query, bool getAirData = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -185,6 +185,11 @@
         <td><span class="parametername">query</span></td>
         <td><p>Weather location</p>
 </td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">getAirData</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -204,24 +209,24 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_System_String__remarks">Remarks</h5>
+  <h5 id="WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_System_String_System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Returns default on http error. In this case, Forecast.Valid will be false.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/new/master/apiSpec/new?filename=WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/new/master/apiSpec/new?filename=WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/blob/master/WeatherAPI-CSharp/WeatherAPIClient.cs/#L70">View Source</a>
   </span>
   <a id="WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync*"></a>
-  <h4 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32)">GetWeatherForecastDailyAsync(string, int)</h4>
+  <h4 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_System_Boolean_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32,System.Boolean)">GetWeatherForecastDailyAsync(string, int, bool)</h4>
   <div class="markdown level1 summary"><p>Get weather forecast for the next <code data-dev-comment-type="paramref" class="paramref">days</code> amount of days at <code data-dev-comment-type="paramref" class="paramref">query</code> location</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ForecastDaily[]&gt; GetWeatherForecastDailyAsync(string query, int days = 7)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ForecastDaily[]&gt; GetWeatherForecastDailyAsync(string query, int days = 7, bool getAirData = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -245,6 +250,11 @@
         <td><p>Amount of days to get the forecast for</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">getAirData</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -263,24 +273,24 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32__remarks">Remarks</h5>
+  <h5 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Returns default on http error. In this case, ForecastDaily[0].Valid will be false.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/new/master/apiSpec/new?filename=WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/new/master/apiSpec/new?filename=WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/blob/master/WeatherAPI-CSharp/WeatherAPIClient.cs/#L116">View Source</a>
   </span>
   <a id="WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync*"></a>
-  <h4 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32)">GetWeatherForecastHourlyAsync(string, int)</h4>
+  <h4 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_System_Boolean_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32,System.Boolean)">GetWeatherForecastHourlyAsync(string, int, bool)</h4>
   <div class="markdown level1 summary"><p>Get weather forecast for the next <code data-dev-comment-type="paramref" class="paramref">hours</code> amount of hours at <code data-dev-comment-type="paramref" class="paramref">query</code> location</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ForecastHourly[]&gt; GetWeatherForecastHourlyAsync(string query, int hours = 24)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ForecastHourly[]&gt; GetWeatherForecastHourlyAsync(string query, int hours = 24, bool getAirData = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -304,6 +314,11 @@
         <td><p>Amount of hours to get the forecast for</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">getAirData</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -322,7 +337,7 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32__remarks">Remarks</h5>
+  <h5 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Returns default on http error. In this case, ForecastHourly[0].Valid will be false.</p>
 </div>
 </article>
