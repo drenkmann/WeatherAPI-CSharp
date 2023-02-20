@@ -33,7 +33,7 @@ public class APIClient
 	/// <remarks>Returns default on http error. In this case, Forecast.Valid will be false.</remarks>
 	public async Task<Forecast> GetWeatherCurrentAsync(string query)
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/current.json?key={_apiKey}&q={query}");
+		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/current.json?key={_apiKey}&q={query}&aqi=yes");
 
 		using var client = new HttpClient();
 
@@ -69,7 +69,7 @@ public class APIClient
 	/// <remarks>Returns default on http error. In this case, ForecastDaily[0].Valid will be false.</remarks>
 	public async Task<ForecastDaily[]> GetWeatherForecastDailyAsync(string query, int days = 7)
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={days}");
+		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={days}&aqi=yes");
 
 		using var client = new HttpClient();
 
@@ -86,7 +86,7 @@ public class APIClient
 
 			foreach (var dailyData in jsonData.forecast.forecastday)
 			{
-				forecasts[index] = new ForecastDaily(dailyData);
+				forecasts[index] = new ForecastDaily(dailyData, index <= 2);
 				index++;
 			}
 
@@ -115,7 +115,7 @@ public class APIClient
 	/// <remarks>Returns default on http error. In this case, ForecastHourly[0].Valid will be false.</remarks>
 	public async Task<ForecastHourly[]> GetWeatherForecastHourlyAsync(string query, int hours = 24)
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={Math.Ceiling(hours / 24d)}");
+		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={Math.Ceiling(hours / 24d)}&aqi=yes");
 
 		using var client = new HttpClient();
 
@@ -134,7 +134,7 @@ public class APIClient
 			{
 				foreach (var hourlyData in dailyData.hour)
 				{
-					forecasts[index] = new ForecastHourly(hourlyData);
+					forecasts[index] = new ForecastHourly(hourlyData, Math.Ceiling((index + 1) / 24d) <= 3);
 					index++;
 					if (index == hours)
 						return forecasts;
