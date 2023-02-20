@@ -31,7 +31,7 @@ public class APIClient
 	/// <param name="query">Weather location</param>
 	/// <returns><see cref="Forecast"/> object with data from location</returns>
 	/// <remarks>Returns default on http error. In this case, Forecast.Valid will be false.</remarks>
-	public async Task<Forecast> GetWeatherCurrentAsync(string query)
+	public async Task<Forecast> GetWeatherCurrentAsync(string query, bool getAirData = false)
 	{
 		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/current.json?key={_apiKey}&q={query}&aqi=yes");
 
@@ -44,7 +44,7 @@ public class APIClient
 			if (jsonData is null)
 				throw new NullReferenceException();
 
-			return new Forecast(jsonData.current);
+			return new Forecast(jsonData.current, getAirData);
 		}
 		catch(HttpRequestException e)
 		{
@@ -67,7 +67,7 @@ public class APIClient
 	/// <param name="days">Amount of days to get the forecast for</param>
 	/// <returns>Array of <see cref="ForecastDaily"/> classes</returns>
 	/// <remarks>Returns default on http error. In this case, ForecastDaily[0].Valid will be false.</remarks>
-	public async Task<ForecastDaily[]> GetWeatherForecastDailyAsync(string query, int days = 7)
+	public async Task<ForecastDaily[]> GetWeatherForecastDailyAsync(string query, int days = 7, bool getAirData = false)
 	{
 		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={days}&aqi=yes");
 
@@ -86,7 +86,7 @@ public class APIClient
 
 			foreach (var dailyData in jsonData.forecast.forecastday)
 			{
-				forecasts[index] = new ForecastDaily(dailyData, index <= 2);
+				forecasts[index] = new ForecastDaily(dailyData, index <= 2 && getAirData);
 				index++;
 			}
 
@@ -113,7 +113,7 @@ public class APIClient
 	/// <param name="hours">Amount of hours to get the forecast for</param>
 	/// <returns>Array of <see cref="ForecastHourly"/> classes</returns>
 	/// <remarks>Returns default on http error. In this case, ForecastHourly[0].Valid will be false.</remarks>
-	public async Task<ForecastHourly[]> GetWeatherForecastHourlyAsync(string query, int hours = 24)
+	public async Task<ForecastHourly[]> GetWeatherForecastHourlyAsync(string query, int hours = 24, bool getAirData = false)
 	{
 		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={Math.Ceiling(hours / 24d)}&aqi=yes");
 
@@ -134,7 +134,7 @@ public class APIClient
 			{
 				foreach (var hourlyData in dailyData.hour)
 				{
-					forecasts[index] = new ForecastHourly(hourlyData, Math.Ceiling((index + 1) / 24d) <= 3);
+					forecasts[index] = new ForecastHourly(hourlyData, Math.Ceiling((index + 1) / 24d) <= 3 && getAirData);
 					index++;
 					if (index == hours)
 						return forecasts;
