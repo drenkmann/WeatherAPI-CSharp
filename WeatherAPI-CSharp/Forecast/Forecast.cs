@@ -55,6 +55,8 @@ public readonly struct Forecast
 	public double GustKph { get; }
 	/// <value>Wind gust in miles per hour</value>
 	public double GustMph { get; }
+	/// <value><see cref="AirQuality"/> data</value>
+	public AirQuality AirQuality { get; }
 
 	internal Forecast(dynamic jsonData)
 	{
@@ -82,6 +84,7 @@ public readonly struct Forecast
 		UV = jsonData.uv;
 		GustKph = jsonData.gust_kph;
 		GustMph = jsonData.gust_mph;
+		AirQuality = new AirQuality(jsonData.air_quality);
 	}
 
 	/// <summary>
@@ -98,6 +101,8 @@ public readonly struct Forecast
 			object value = descriptor.GetValue(this) ?? "Null";
 			s += $"{name} = {value}\n";
 		}
+
+		s += $"AQI Valid = {AirQuality.Valid}";
 
 		return s;
 	}
