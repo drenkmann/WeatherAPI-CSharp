@@ -29,11 +29,12 @@ public class APIClient
 	/// Get Current weather at <paramref name="query" /> location
 	/// </summary>
 	/// <param name="query">Weather location</param>
+	/// <param name="getAirData">Wether or not to get air quality data</param>
 	/// <returns><see cref="Forecast"/> object with data from location</returns>
 	/// <remarks>Returns default on http error. In this case, Forecast.Valid will be false.</remarks>
 	public async Task<Forecast> GetWeatherCurrentAsync(string query, bool getAirData = false)
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/current.json?key={_apiKey}&q={query}&aqi=yes");
+		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/current.json?key={_apiKey}&q={query}&aqi={(getAirData ? "yes" : "no")}");
 
 		using var client = new HttpClient();
 
@@ -65,11 +66,12 @@ public class APIClient
 	/// </summary>
 	/// <param name="query">Weather location</param>
 	/// <param name="days">Amount of days to get the forecast for</param>
+	/// <param name="getAirData">Wether or not to get air quality data</param>
 	/// <returns>Array of <see cref="ForecastDaily"/> classes</returns>
 	/// <remarks>Returns default on http error. In this case, ForecastDaily[0].Valid will be false.</remarks>
 	public async Task<ForecastDaily[]> GetWeatherForecastDailyAsync(string query, int days = 7, bool getAirData = false)
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={days}&aqi=yes");
+		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={days}&aqi={(getAirData ? "yes" : "no")}");
 
 		using var client = new HttpClient();
 
@@ -111,11 +113,12 @@ public class APIClient
 	/// </summary>
 	/// <param name="query">Weather location</param>
 	/// <param name="hours">Amount of hours to get the forecast for</param>
+	/// <param name="getAirData">Wether or not to get air quality data</param>
 	/// <returns>Array of <see cref="ForecastHourly"/> classes</returns>
 	/// <remarks>Returns default on http error. In this case, ForecastHourly[0].Valid will be false.</remarks>
 	public async Task<ForecastHourly[]> GetWeatherForecastHourlyAsync(string query, int hours = 24, bool getAirData = false)
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={Math.Ceiling(hours / 24d)}&aqi=yes");
+		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={Math.Ceiling(hours / 24d)}&aqi={(getAirData ? "yes" : "no")}");
 
 		using var client = new HttpClient();
 
