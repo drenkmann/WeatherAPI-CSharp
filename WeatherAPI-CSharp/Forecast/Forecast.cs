@@ -80,7 +80,7 @@ public readonly struct Forecast
 		PrecipitationIn = jsonData.precip_in;
 		Humidity = jsonData.humidity;
 		Clouds = jsonData.cloud;
-		IsDay = jsonData.is_day == 0 ? false : true;
+		IsDay = jsonData.is_day == 1;
 		UV = jsonData.uv;
 		GustKph = jsonData.gust_kph;
 		GustMph = jsonData.gust_mph;
