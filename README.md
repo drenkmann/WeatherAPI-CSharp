@@ -6,7 +6,7 @@
 &nbsp;
 
 # WeatherAPI CSharp
-This is a small wrapper library to be used with the weatherapi.com API. It is a much simpler alternative to the [official]("https://github.com/weatherapicom/csharp") library, with the goal to make building any kind of weather app much simpler. There are no complicated classes are functions to worry about, you just create your client, call the function, and get perfectly parsed, easily acessable data returned, no need for verbose code.
+This is a small wrapper library to be used with the weatherapi.com API. It is a much simpler alternative to the [official]("https://github.com/weatherapicom/csharp") library, with the goal to make building any kind of weather app easy. There are no complicated classes are functions to worry about, you just create your client, call the function, and get perfectly parsed, easily acessable data returned, no need for verbose code.
 
 ## Getting started (Extract from the documentation)
 To get started, you can take a look at the minimal setup down below.
