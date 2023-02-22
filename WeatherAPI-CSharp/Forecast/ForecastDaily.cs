@@ -79,8 +79,8 @@ public readonly struct ForecastDaily
 		AvgVisibilityKm = jsonData.day.avgvis_km;
 		AvgVisibilityMiles = jsonData.day.avgvis_miles;
 		AvgHumidity = jsonData.day.avghumidity;
-		WillItRain = jsonData.day.daily_will_it_rain == 0 ? false : true;
-		WillItSnow = jsonData.day.daily_will_it_snow == 0 ? false : true;
+		WillItRain = jsonData.day.daily_will_it_rain == 1;
+		WillItSnow = jsonData.day.daily_will_it_snow == 1;
 		ChanceOfRain = jsonData.day.daily_chance_of_rain;
 		ChanceOfSnow = jsonData.day.daily_chance_of_snow;
 		ConditionText = jsonData.day.condition.text;
