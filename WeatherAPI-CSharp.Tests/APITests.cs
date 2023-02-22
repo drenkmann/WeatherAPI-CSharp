@@ -39,7 +39,7 @@ public class APITests
 	[Fact]
 	public async Task TestGetWeatherForecastDailyAsync()
 	{
-		var days = 5;
+		const int days = 5;
 		var client = new APIClient(apiKey, true);
 		var weather = await client.GetWeatherForecastDailyAsync("Berlin", days, true);
 
@@ -77,7 +77,7 @@ public class APITests
 	[Fact]
 	public async Task TestGetWeatherForecastHourlyAsync()
 	{
-		var hours = 24 * 12;
+		const int hours = 24 * 12;
 		var client = new APIClient(apiKey, true);
 		var weather = await client.GetWeatherForecastHourlyAsync("Berlin", hours, true);
 
