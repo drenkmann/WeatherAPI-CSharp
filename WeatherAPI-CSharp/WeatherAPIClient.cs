@@ -1,5 +1,5 @@
-using Newtonsoft.Json;
 using System.Net;
+using Newtonsoft.Json;
 
 /// <summary>
 /// Holds all classes needed to make API requests
@@ -47,7 +47,7 @@ public class APIClient
 
 			return new Forecast(jsonData.current, getAirData);
 		}
-		catch(HttpRequestException e)
+		catch (HttpRequestException e)
 		{
 			System.Diagnostics.Debug.WriteLine(e.StatusCode switch
 			{
@@ -66,12 +66,11 @@ public class APIClient
 	/// </summary>
 	/// <param name="query">Weather location</param>
 	/// <param name="days">Amount of days to get the forecast for</param>
-	/// <param name="getAirData">Wether or not to get air quality data</param>
 	/// <returns>Array of <see cref="ForecastDaily"/> classes</returns>
 	/// <remarks>Returns default on http error. In this case, ForecastDaily[0].Valid will be false.</remarks>
-	public async Task<ForecastDaily[]> GetWeatherForecastDailyAsync(string query, int days = 7, bool getAirData = false)
+	public async Task<ForecastDaily[]> GetWeatherForecastDailyAsync(string query, int days = 3)
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={days}&aqi={(getAirData ? "yes" : "no")}");
+		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={days}");
 
 		using var client = new HttpClient();
 
@@ -88,13 +87,13 @@ public class APIClient
 
 			foreach (var dailyData in jsonData.forecast.forecastday)
 			{
-				forecasts[index] = new ForecastDaily(dailyData, index <= 2 && getAirData);
+				forecasts[index] = new ForecastDaily(dailyData);
 				index++;
 			}
 
 			return forecasts;
 		}
-		catch(HttpRequestException e)
+		catch (HttpRequestException e)
 		{
 			System.Diagnostics.Debug.WriteLine(e.StatusCode switch
 			{
@@ -104,7 +103,7 @@ public class APIClient
 				HttpStatusCode.NotFound => "Error 404 - Not Found.",
 				_ => $"Error {e.StatusCode}"
 			});
-			return new ForecastDaily[]{default};
+			return new ForecastDaily[] { default };
 		}
 	}
 
@@ -113,12 +112,11 @@ public class APIClient
 	/// </summary>
 	/// <param name="query">Weather location</param>
 	/// <param name="hours">Amount of hours to get the forecast for</param>
-	/// <param name="getAirData">Wether or not to get air quality data</param>
 	/// <returns>Array of <see cref="ForecastHourly"/> classes</returns>
 	/// <remarks>Returns default on http error. In this case, ForecastHourly[0].Valid will be false.</remarks>
-	public async Task<ForecastHourly[]> GetWeatherForecastHourlyAsync(string query, int hours = 24, bool getAirData = false)
+	public async Task<ForecastHourly[]> GetWeatherForecastHourlyAsync(string query, int hours = 24)
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={Math.Ceiling(hours / 24d)}&aqi={(getAirData ? "yes" : "no")}");
+		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={Math.Ceiling(hours / 24d)}");
 
 		using var client = new HttpClient();
 
@@ -137,7 +135,7 @@ public class APIClient
 			{
 				foreach (var hourlyData in dailyData.hour)
 				{
-					forecasts[index] = new ForecastHourly(hourlyData, Math.Ceiling((index + 1) / 24d) <= 3 && getAirData);
+					forecasts[index] = new ForecastHourly(hourlyData);
 					index++;
 					if (index == hours)
 						return forecasts;
@@ -146,7 +144,7 @@ public class APIClient
 
 			return forecasts;
 		}
-		catch(HttpRequestException e)
+		catch (HttpRequestException e)
 		{
 			System.Diagnostics.Debug.WriteLine(e.StatusCode switch
 			{
@@ -156,7 +154,7 @@ public class APIClient
 				HttpStatusCode.NotFound => "Error 404 - Not Found.",
 				_ => $"Error {e.StatusCode}"
 			});
-			return new ForecastHourly[]{default};
+			return new ForecastHourly[] { default };
 		}
 	}
 }
