@@ -57,10 +57,8 @@ public readonly struct ForecastDaily
 	public int ConditionCode { get; }
 	/// <value>UV Index</value>
 	public double UV { get; }
-	/// <value><see cref="AirQuality"/> data</value>
-	public AirQuality AirQuality { get; }
 
-	internal ForecastDaily(dynamic jsonData, bool airQuality)
+	internal ForecastDaily(dynamic jsonData)
 	{
 		Valid = true;
 		Date = jsonData.date;
@@ -87,13 +85,6 @@ public readonly struct ForecastDaily
 		ConditionIconUrl = jsonData.day.condition.icon;
 		ConditionCode = jsonData.day.condition.code;
 		UV = jsonData.day.uv;
-		if (airQuality)
-		{
-			AirQuality = new AirQuality(jsonData.day.air_quality);
-			return;
-		}
-
-		AirQuality = default;
 	}
 
 	/// <summary>
