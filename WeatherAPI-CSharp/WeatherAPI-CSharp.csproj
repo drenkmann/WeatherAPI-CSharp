@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageId>WeatherAPI-CSharp</PackageId>
-    <Version>0.4.3</Version>
+    <Version>0.5.0</Version>
     <PackageTags>CSharp</PackageTags>
     <Description>
       This is a small wrapper library to be used with the weatherapi.com API. It is a much simpler alternative to the official library, with the goal to make building any kind of weather app much simpler.
@@ -21,11 +21,11 @@
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="../LICENSE.md" Pack="true" PackagePath=""/>
-    <None Include="../README.md" Pack="true" PackagePath=""/>
+    <None Include="../LICENSE.md" Pack="true" PackagePath="" />
+    <None Include="../README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>
