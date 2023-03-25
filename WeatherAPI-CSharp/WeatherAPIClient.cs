@@ -157,4 +157,34 @@ public class APIClient
 			return new ForecastHourly[] { default };
 		}
 	}
+
+	public async Task<LocationData> GetLocationDataByIpAsync()
+	{
+		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/ip.json?key={_apiKey}&q=auto:ip");
+
+		using var client = new HttpClient();
+
+		try
+		{
+			var jsonResponse = await client.GetStringAsync(uri);
+			dynamic jsonData = JsonConvert.DeserializeObject(jsonResponse)!;
+
+			if (jsonData is null)
+				throw new NullReferenceException();
+
+			return new LocationData(jsonData);
+		}
+		catch (HttpRequestException e)
+		{
+			System.Diagnostics.Debug.WriteLine(e.StatusCode switch
+			{
+				HttpStatusCode.BadRequest => "Error 400 - Bad Request. Possible query error?",
+				HttpStatusCode.Unauthorized => "Error 401 - Unauthorized. Possible API key error?",
+				HttpStatusCode.Forbidden => "Error 403 - Forbidden. Possible API key error?",
+				HttpStatusCode.NotFound => "Error 404 - Not Found.",
+				_ => $"Error {e.StatusCode}"
+			});
+			return default;
+		}
+	}
 }

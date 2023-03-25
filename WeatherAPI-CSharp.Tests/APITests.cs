@@ -107,4 +107,14 @@ public class APITests
 			Assert.False(forecast.Valid);
 		}
 	}
+
+	[Fact]
+	public async Task TestGetLocationDataByIp()
+	{
+		var client = new APIClient(apiKey, true);
+		var location = await client.GetLocationDataByIpAsync();
+
+		output.WriteLine(location.ToString());
+		Assert.True(location.Valid);
+	}
 }
