@@ -197,15 +197,15 @@ references:
   isSpec: "True"
   fullName: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync
   nameWithType: APIClient.GetWeatherCurrentAsync
-- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32,System.Boolean)
-  name: GetWeatherForecastDailyAsync(string, int, bool)
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_System_Boolean_
-  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32,System.Boolean)
-  name.vb: GetWeatherForecastDailyAsync(String, Integer, Boolean)
-  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(string, int, bool)
-  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(String, Integer, Boolean)
-  nameWithType: APIClient.GetWeatherForecastDailyAsync(string, int, bool)
-  nameWithType.vb: APIClient.GetWeatherForecastDailyAsync(String, Integer, Boolean)
+- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32)
+  name: GetWeatherForecastDailyAsync(string, int)
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_
+  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32)
+  name.vb: GetWeatherForecastDailyAsync(String, Integer)
+  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(string, int)
+  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(String, Integer)
+  nameWithType: APIClient.GetWeatherForecastDailyAsync(string, int)
+  nameWithType.vb: APIClient.GetWeatherForecastDailyAsync(String, Integer)
 - uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync*
   name: GetWeatherForecastDailyAsync
   href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_
@@ -213,15 +213,15 @@ references:
   isSpec: "True"
   fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync
   nameWithType: APIClient.GetWeatherForecastDailyAsync
-- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32,System.Boolean)
-  name: GetWeatherForecastHourlyAsync(string, int, bool)
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_System_Boolean_
-  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32,System.Boolean)
-  name.vb: GetWeatherForecastHourlyAsync(String, Integer, Boolean)
-  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(string, int, bool)
-  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(String, Integer, Boolean)
-  nameWithType: APIClient.GetWeatherForecastHourlyAsync(string, int, bool)
-  nameWithType.vb: APIClient.GetWeatherForecastHourlyAsync(String, Integer, Boolean)
+- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32)
+  name: GetWeatherForecastHourlyAsync(string, int)
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_
+  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32)
+  name.vb: GetWeatherForecastHourlyAsync(String, Integer)
+  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(string, int)
+  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(String, Integer)
+  nameWithType: APIClient.GetWeatherForecastHourlyAsync(string, int)
+  nameWithType.vb: APIClient.GetWeatherForecastHourlyAsync(String, Integer)
 - uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync*
   name: GetWeatherForecastHourlyAsync
   href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_
@@ -579,19 +579,6 @@ references:
   commentId: T:WeatherAPI_CSharp.ForecastDaily
   fullName: WeatherAPI_CSharp.ForecastDaily
   nameWithType: ForecastDaily
-- uid: WeatherAPI_CSharp.ForecastDaily.AirQuality
-  name: AirQuality
-  href: api/WeatherAPI_CSharp.ForecastDaily.html#WeatherAPI_CSharp_ForecastDaily_AirQuality
-  commentId: P:WeatherAPI_CSharp.ForecastDaily.AirQuality
-  fullName: WeatherAPI_CSharp.ForecastDaily.AirQuality
-  nameWithType: ForecastDaily.AirQuality
-- uid: WeatherAPI_CSharp.ForecastDaily.AirQuality*
-  name: AirQuality
-  href: api/WeatherAPI_CSharp.ForecastDaily.html#WeatherAPI_CSharp_ForecastDaily_AirQuality_
-  commentId: Overload:WeatherAPI_CSharp.ForecastDaily.AirQuality
-  isSpec: "True"
-  fullName: WeatherAPI_CSharp.ForecastDaily.AirQuality
-  nameWithType: ForecastDaily.AirQuality
 - uid: WeatherAPI_CSharp.ForecastDaily.AvgHumidity
   name: AvgHumidity
   href: api/WeatherAPI_CSharp.ForecastDaily.html#WeatherAPI_CSharp_ForecastDaily_AvgHumidity
@@ -936,19 +923,6 @@ references:
   commentId: T:WeatherAPI_CSharp.ForecastHourly
   fullName: WeatherAPI_CSharp.ForecastHourly
   nameWithType: ForecastHourly
-- uid: WeatherAPI_CSharp.ForecastHourly.AirQuality
-  name: AirQuality
-  href: api/WeatherAPI_CSharp.ForecastHourly.html#WeatherAPI_CSharp_ForecastHourly_AirQuality
-  commentId: P:WeatherAPI_CSharp.ForecastHourly.AirQuality
-  fullName: WeatherAPI_CSharp.ForecastHourly.AirQuality
-  nameWithType: ForecastHourly.AirQuality
-- uid: WeatherAPI_CSharp.ForecastHourly.AirQuality*
-  name: AirQuality
-  href: api/WeatherAPI_CSharp.ForecastHourly.html#WeatherAPI_CSharp_ForecastHourly_AirQuality_
-  commentId: Overload:WeatherAPI_CSharp.ForecastHourly.AirQuality
-  isSpec: "True"
-  fullName: WeatherAPI_CSharp.ForecastHourly.AirQuality
-  nameWithType: ForecastHourly.AirQuality
 - uid: WeatherAPI_CSharp.ForecastHourly.ChanceOfRain
   name: ChanceOfRain
   href: api/WeatherAPI_CSharp.ForecastHourly.html#WeatherAPI_CSharp_ForecastHourly_ChanceOfRain

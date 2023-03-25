@@ -12,7 +12,7 @@
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
       <meta property="docfx:navrel" content="../toc.html">
@@ -129,7 +129,7 @@
     <pre><code class="lang-csharp hljs">public APIClient(string apiKey, bool useHttps = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -171,7 +171,7 @@
     <pre><code class="lang-csharp hljs">public Task&lt;Forecast&gt; GetWeatherCurrentAsync(string query, bool getAirData = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -195,7 +195,7 @@
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -204,7 +204,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="WeatherAPI_CSharp.Forecast.html">Forecast</a>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WeatherAPI_CSharp.Forecast.html">Forecast</a>&gt;</td>
         <td><p><a class="xref" href="WeatherAPI_CSharp.Forecast.html">Forecast</a> object with data from location</p>
 </td>
       </tr>
@@ -215,22 +215,22 @@
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/new/master/apiSpec/new?filename=WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/new/master/apiSpec/new?filename=WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/blob/master/WeatherAPI-CSharp/WeatherAPIClient.cs/#L72">View Source</a>
+    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/blob/master/WeatherAPI-CSharp/WeatherAPIClient.cs/#L71">View Source</a>
   </span>
   <a id="WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync*"></a>
-  <h4 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_System_Boolean_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32,System.Boolean)">GetWeatherForecastDailyAsync(string, int, bool)</h4>
+  <h4 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32)">GetWeatherForecastDailyAsync(string, int)</h4>
   <div class="markdown level1 summary"><p>Get weather forecast for the next <code data-dev-comment-type="paramref" class="paramref">days</code> amount of days at <code data-dev-comment-type="paramref" class="paramref">query</code> location</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ForecastDaily[]&gt; GetWeatherForecastDailyAsync(string query, int days = 7, bool getAirData = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ForecastDaily[]&gt; GetWeatherForecastDailyAsync(string query, int days = 3)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -251,16 +251,10 @@
         <td><p>Amount of days to get the forecast for</p>
 </td>
       </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">getAirData</span></td>
-        <td><p>Wether or not to get air quality data</p>
-</td>
-      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -269,33 +263,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="WeatherAPI_CSharp.ForecastDaily.html">ForecastDaily</a>[]&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WeatherAPI_CSharp.ForecastDaily.html">ForecastDaily</a>[]&gt;</td>
         <td><p>Array of <a class="xref" href="WeatherAPI_CSharp.ForecastDaily.html">ForecastDaily</a> classes</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_System_Boolean__remarks">Remarks</h5>
+  <h5 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Returns default on http error. In this case, ForecastDaily[0].Valid will be false.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/new/master/apiSpec/new?filename=WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/new/master/apiSpec/new?filename=WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/blob/master/WeatherAPI-CSharp/WeatherAPIClient.cs/#L119">View Source</a>
+    <a href="https://github.com/underthefoxtree/WeatherAPI-CSharp/blob/master/WeatherAPI-CSharp/WeatherAPIClient.cs/#L117">View Source</a>
   </span>
   <a id="WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync*"></a>
-  <h4 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_System_Boolean_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32,System.Boolean)">GetWeatherForecastHourlyAsync(string, int, bool)</h4>
+  <h4 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_" data-uid="WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32)">GetWeatherForecastHourlyAsync(string, int)</h4>
   <div class="markdown level1 summary"><p>Get weather forecast for the next <code data-dev-comment-type="paramref" class="paramref">hours</code> amount of hours at <code data-dev-comment-type="paramref" class="paramref">query</code> location</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ForecastHourly[]&gt; GetWeatherForecastHourlyAsync(string query, int hours = 24, bool getAirData = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ForecastHourly[]&gt; GetWeatherForecastHourlyAsync(string query, int hours = 24)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -316,16 +310,10 @@
         <td><p>Amount of hours to get the forecast for</p>
 </td>
       </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">getAirData</span></td>
-        <td><p>Wether or not to get air quality data</p>
-</td>
-      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -334,13 +322,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span>&lt;<a class="xref" href="WeatherAPI_CSharp.ForecastHourly.html">ForecastHourly</a>[]&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="WeatherAPI_CSharp.ForecastHourly.html">ForecastHourly</a>[]&gt;</td>
         <td><p>Array of <a class="xref" href="WeatherAPI_CSharp.ForecastHourly.html">ForecastHourly</a> classes</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_System_Boolean__remarks">Remarks</h5>
+  <h5 id="WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Returns default on http error. In this case, ForecastHourly[0].Valid will be false.</p>
 </div>
 </article>
@@ -381,7 +369,7 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>
