@@ -30,6 +30,7 @@ The currently implemented [endpoints](https://www.weatherapi.com/docs/) are:
 - [Current](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.Forecast.html) (current.json)
 - [Forecast daily](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.ForecastDaily.html) (forecast.json)
 - [Forecast hourly](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.ForecastHourly.html) (forecast.json)
+- [IP Lookup](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.LocationData.html) (ip.json)
 
 ## Contribution
 For contribution guidelines, refer to the [documentation](https://skratymir.github.io/WeatherAPI-CSharp/).
