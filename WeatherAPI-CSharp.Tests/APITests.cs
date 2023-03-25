@@ -117,4 +117,19 @@ public class APITests
 		output.WriteLine(location.ToString());
 		Assert.True(location.Valid);
 	}
+
+	[Fact]
+	public async Task TestGetCurrentDataWithIpLookup()
+	{
+		var client = new APIClient(apiKey, true);
+		var weather = await client.GetWeatherCurrentAsync(client.GetLocationDataByIpAsync().Result.City, true);
+
+		output.WriteLine(weather.ToString());
+
+		Assert.True(weather.Valid);
+		Assert.True(weather.AirQuality.Valid);
+		Assert.InRange(weather.TemperatureCelsius, -100, 100);
+		Assert.NotEmpty(weather.ConditionText);
+		Assert.InRange(weather.WindKph, 0, 200);
+	}
 }
