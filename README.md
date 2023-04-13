@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/license-MIT-limegreen?style=for-the-badge)](./LICENSE.md)
-[![Documentation](https://img.shields.io/badge/DOCUMENTATION-blue?style=for-the-badge)](https://skratymir.github.io/WeatherAPI-CSharp/)
+[![Documentation](https://img.shields.io/badge/DOCUMENTATION-blue?style=for-the-badge)](https://underthefoxtree.github.io/WeatherAPI-CSharp/)
 [![Nuget](https://img.shields.io/nuget/v/WeatherAPI-CSharp?label=Version&style=for-the-badge)](https://www.nuget.org/packages/WeatherAPI-CSharp)
 [![Nuget](https://img.shields.io/nuget/dt/WeatherAPI-CSharp?style=for-the-badge)](https://www.nuget.org/stats/packages/WeatherAPI-CSharp?groupby=Version)
 #### All badges are clickable for more information
@@ -27,14 +27,14 @@ Console.WriteLine($"The temperature in Berlin is {weather.TemperatureCelsius}C a
 
 ## API Implementation
 The currently implemented [endpoints](https://www.weatherapi.com/docs/) are:
-- [Current](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.Forecast.html) (current.json)
-- [Forecast daily](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.ForecastDaily.html) (forecast.json)
-- [Forecast hourly](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.ForecastHourly.html) (forecast.json)
-- [IP Lookup](https://skratymir.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.LocationData.html) (ip.json)
+- [Current](https://underthefoxtree.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.Forecast.html) (current.json)
+- [Forecast daily](https://underthefoxtree.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.ForecastDaily.html) (forecast.json)
+- [Forecast hourly](https://underthefoxtree.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.ForecastHourly.html) (forecast.json)
+- [IP Lookup](https://underthefoxtree.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.LocationData.html) (ip.json)
 
 ## Contribution
-For contribution guidelines, refer to the [documentation](https://skratymir.github.io/WeatherAPI-CSharp/).
-Coding guidelines can be found [here](https://skratymir.github.io/WeatherAPI-CSharp/guidelines/codestyle.html), and contribution guidelines can be found [here](https://skratymir.github.io/WeatherAPI-CSharp/guidelines/contribution.html).
+For contribution guidelines, refer to the [documentation](https://underthefoxtree.github.io/WeatherAPI-CSharp/).
+Coding guidelines can be found [here](https://underthefoxtree.github.io/WeatherAPI-CSharp/guidelines/codestyle.html), and contribution guidelines can be found [here](https://underthefoxtree.github.io/WeatherAPI-CSharp/guidelines/contribution.html).
 
 ## License
 This software is licensed under the [MIT License](LICENSE.md).
