@@ -2,6 +2,7 @@
 [![Documentation](https://img.shields.io/badge/DOCUMENTATION-blue?style=for-the-badge)](https://underthefoxtree.github.io/WeatherAPI-CSharp/)
 [![Nuget](https://img.shields.io/nuget/v/WeatherAPI-CSharp?label=Version&style=for-the-badge)](https://www.nuget.org/packages/WeatherAPI-CSharp)
 [![Nuget](https://img.shields.io/nuget/dt/WeatherAPI-CSharp?style=for-the-badge)](https://www.nuget.org/stats/packages/WeatherAPI-CSharp?groupby=Version)
+[![Development Status](https://img.shields.io/badge/DEVELOPMENT-ON_DEMAND-yellow?style=for-the-badge)](#development-status)
 #### All badges are clickable for more information
 &nbsp;
 
@@ -35,6 +36,16 @@ The currently implemented [endpoints](https://www.weatherapi.com/docs/) are:
 ## Contribution
 For contribution guidelines, refer to the [documentation](https://underthefoxtree.github.io/WeatherAPI-CSharp/).
 Coding guidelines can be found [here](https://underthefoxtree.github.io/WeatherAPI-CSharp/guidelines/codestyle.html), and contribution guidelines can be found [here](https://underthefoxtree.github.io/WeatherAPI-CSharp/guidelines/contribution.html).
+
+## Development Status
+Status | Description
+---|---
+Active | The project is actively being worked on and new features are being added
+On Demand | Bugs and other Issues will be fixed, but no new features will be added
+Paused | No development will take place at the moment, but this may change in the future
+Ceased | The project will not be worked on AT ALL
+
+The development status can change at any time in both ways (more/less work being done).
 
 ## License
 This software is licensed under the [MIT License](LICENSE.md).
