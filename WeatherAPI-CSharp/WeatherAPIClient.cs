@@ -158,6 +158,10 @@ public class APIClient
 		}
 	}
 
+	/// <summary>
+	/// Get the location via the IP endpoint
+	/// </summary>
+	/// <returns><see cref="LocationData"/> object containing the location</returns>
 	public async Task<LocationData> GetLocationDataByIpAsync()
 	{
 		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/ip.json?key={_apiKey}&q=auto:ip");
