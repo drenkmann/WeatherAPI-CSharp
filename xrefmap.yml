@@ -7,6 +7,92 @@ references:
   commentId: N:WeatherAPI_CSharp
   fullName: WeatherAPI_CSharp
   nameWithType: WeatherAPI_CSharp
+- uid: WeatherAPI_CSharp.APIClient
+  name: APIClient
+  href: api/WeatherAPI_CSharp.APIClient.html
+  commentId: T:WeatherAPI_CSharp.APIClient
+  fullName: WeatherAPI_CSharp.APIClient
+  nameWithType: APIClient
+- uid: WeatherAPI_CSharp.APIClient.#ctor(System.String,System.Boolean)
+  name: APIClient(string, bool)
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient__ctor_System_String_System_Boolean_
+  commentId: M:WeatherAPI_CSharp.APIClient.#ctor(System.String,System.Boolean)
+  name.vb: New(String, Boolean)
+  fullName: WeatherAPI_CSharp.APIClient.APIClient(string, bool)
+  fullName.vb: WeatherAPI_CSharp.APIClient.New(String, Boolean)
+  nameWithType: APIClient.APIClient(string, bool)
+  nameWithType.vb: APIClient.New(String, Boolean)
+- uid: WeatherAPI_CSharp.APIClient.#ctor*
+  name: APIClient
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient__ctor_
+  commentId: Overload:WeatherAPI_CSharp.APIClient.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: WeatherAPI_CSharp.APIClient.APIClient
+  fullName.vb: WeatherAPI_CSharp.APIClient.New
+  nameWithType: APIClient.APIClient
+  nameWithType.vb: APIClient.New
+- uid: WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync
+  name: GetLocationDataByIpAsync()
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetLocationDataByIpAsync
+  commentId: M:WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync
+  fullName: WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync()
+  nameWithType: APIClient.GetLocationDataByIpAsync()
+- uid: WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync*
+  name: GetLocationDataByIpAsync
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetLocationDataByIpAsync_
+  commentId: Overload:WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync
+  nameWithType: APIClient.GetLocationDataByIpAsync
+- uid: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String,System.Boolean)
+  name: GetWeatherCurrentAsync(string, bool)
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_System_String_System_Boolean_
+  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String,System.Boolean)
+  name.vb: GetWeatherCurrentAsync(String, Boolean)
+  fullName: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(string, bool)
+  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(String, Boolean)
+  nameWithType: APIClient.GetWeatherCurrentAsync(string, bool)
+  nameWithType.vb: APIClient.GetWeatherCurrentAsync(String, Boolean)
+- uid: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync*
+  name: GetWeatherCurrentAsync
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_
+  commentId: Overload:WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync
+  nameWithType: APIClient.GetWeatherCurrentAsync
+- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32)
+  name: GetWeatherForecastDailyAsync(string, int)
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_
+  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32)
+  name.vb: GetWeatherForecastDailyAsync(String, Integer)
+  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(string, int)
+  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(String, Integer)
+  nameWithType: APIClient.GetWeatherForecastDailyAsync(string, int)
+  nameWithType.vb: APIClient.GetWeatherForecastDailyAsync(String, Integer)
+- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync*
+  name: GetWeatherForecastDailyAsync
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_
+  commentId: Overload:WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync
+  nameWithType: APIClient.GetWeatherForecastDailyAsync
+- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32)
+  name: GetWeatherForecastHourlyAsync(string, int)
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_
+  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32)
+  name.vb: GetWeatherForecastHourlyAsync(String, Integer)
+  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(string, int)
+  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(String, Integer)
+  nameWithType: APIClient.GetWeatherForecastHourlyAsync(string, int)
+  nameWithType.vb: APIClient.GetWeatherForecastHourlyAsync(String, Integer)
+- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync*
+  name: GetWeatherForecastHourlyAsync
+  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_
+  commentId: Overload:WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync
+  isSpec: "True"
+  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync
+  nameWithType: APIClient.GetWeatherForecastHourlyAsync
 - uid: WeatherAPI_CSharp.AirQuality
   name: AirQuality
   href: api/WeatherAPI_CSharp.AirQuality.html
@@ -156,92 +242,6 @@ references:
   isSpec: "True"
   fullName: WeatherAPI_CSharp.AirQuality.Valid
   nameWithType: AirQuality.Valid
-- uid: WeatherAPI_CSharp.APIClient
-  name: APIClient
-  href: api/WeatherAPI_CSharp.APIClient.html
-  commentId: T:WeatherAPI_CSharp.APIClient
-  fullName: WeatherAPI_CSharp.APIClient
-  nameWithType: APIClient
-- uid: WeatherAPI_CSharp.APIClient.#ctor(System.String,System.Boolean)
-  name: APIClient(string, bool)
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient__ctor_System_String_System_Boolean_
-  commentId: M:WeatherAPI_CSharp.APIClient.#ctor(System.String,System.Boolean)
-  name.vb: New(String, Boolean)
-  fullName: WeatherAPI_CSharp.APIClient.APIClient(string, bool)
-  fullName.vb: WeatherAPI_CSharp.APIClient.New(String, Boolean)
-  nameWithType: APIClient.APIClient(string, bool)
-  nameWithType.vb: APIClient.New(String, Boolean)
-- uid: WeatherAPI_CSharp.APIClient.#ctor*
-  name: APIClient
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient__ctor_
-  commentId: Overload:WeatherAPI_CSharp.APIClient.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: WeatherAPI_CSharp.APIClient.APIClient
-  fullName.vb: WeatherAPI_CSharp.APIClient.New
-  nameWithType: APIClient.APIClient
-  nameWithType.vb: APIClient.New
-- uid: WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync
-  name: GetLocationDataByIpAsync()
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetLocationDataByIpAsync
-  commentId: M:WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync
-  fullName: WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync()
-  nameWithType: APIClient.GetLocationDataByIpAsync()
-- uid: WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync*
-  name: GetLocationDataByIpAsync
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetLocationDataByIpAsync_
-  commentId: Overload:WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync
-  isSpec: "True"
-  fullName: WeatherAPI_CSharp.APIClient.GetLocationDataByIpAsync
-  nameWithType: APIClient.GetLocationDataByIpAsync
-- uid: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String,System.Boolean)
-  name: GetWeatherCurrentAsync(string, bool)
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_System_String_System_Boolean_
-  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(System.String,System.Boolean)
-  name.vb: GetWeatherCurrentAsync(String, Boolean)
-  fullName: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(string, bool)
-  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync(String, Boolean)
-  nameWithType: APIClient.GetWeatherCurrentAsync(string, bool)
-  nameWithType.vb: APIClient.GetWeatherCurrentAsync(String, Boolean)
-- uid: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync*
-  name: GetWeatherCurrentAsync
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherCurrentAsync_
-  commentId: Overload:WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync
-  isSpec: "True"
-  fullName: WeatherAPI_CSharp.APIClient.GetWeatherCurrentAsync
-  nameWithType: APIClient.GetWeatherCurrentAsync
-- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32)
-  name: GetWeatherForecastDailyAsync(string, int)
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_System_String_System_Int32_
-  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(System.String,System.Int32)
-  name.vb: GetWeatherForecastDailyAsync(String, Integer)
-  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(string, int)
-  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync(String, Integer)
-  nameWithType: APIClient.GetWeatherForecastDailyAsync(string, int)
-  nameWithType.vb: APIClient.GetWeatherForecastDailyAsync(String, Integer)
-- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync*
-  name: GetWeatherForecastDailyAsync
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastDailyAsync_
-  commentId: Overload:WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync
-  isSpec: "True"
-  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastDailyAsync
-  nameWithType: APIClient.GetWeatherForecastDailyAsync
-- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32)
-  name: GetWeatherForecastHourlyAsync(string, int)
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_System_String_System_Int32_
-  commentId: M:WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(System.String,System.Int32)
-  name.vb: GetWeatherForecastHourlyAsync(String, Integer)
-  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(string, int)
-  fullName.vb: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync(String, Integer)
-  nameWithType: APIClient.GetWeatherForecastHourlyAsync(string, int)
-  nameWithType.vb: APIClient.GetWeatherForecastHourlyAsync(String, Integer)
-- uid: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync*
-  name: GetWeatherForecastHourlyAsync
-  href: api/WeatherAPI_CSharp.APIClient.html#WeatherAPI_CSharp_APIClient_GetWeatherForecastHourlyAsync_
-  commentId: Overload:WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync
-  isSpec: "True"
-  fullName: WeatherAPI_CSharp.APIClient.GetWeatherForecastHourlyAsync
-  nameWithType: APIClient.GetWeatherForecastHourlyAsync
 - uid: WeatherAPI_CSharp.Forecast
   name: Forecast
   href: api/WeatherAPI_CSharp.Forecast.html
