@@ -1,5 +1,4 @@
 {
-  "homepages": [],
   "source_base_path": "/home/runner/work/WeatherAPI-CSharp/WeatherAPI-CSharp/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -89,6 +88,9 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -119,6 +121,9 @@
       "output": {
         ".html": {
           "relative_path": "guidelines/toc.html"
+        },
+        ".json": {
+          "relative_path": "guidelines/toc.json"
         }
       },
       "version": ""
@@ -149,12 +154,14 @@
       "output": {
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"
