@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 underthefoxtree
+Copyright (c) 2024 drenkmann
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

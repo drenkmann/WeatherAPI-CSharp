@@ -17,4 +17,4 @@ var weather = await client.GetWeatherCurrentAsync("Berlin");
 Console.WriteLine($"The temperature in Berlin is {weather.TemperatureCelsius}C at a wind speed of {weather.WindKph}km/h");
 ```
 
-Information about APIClient can be found [here](https://underthefoxtree.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.APIClient.html).
+Information about APIClient can be found [here](https://drenkmann.github.io/WeatherAPI-CSharp/api/WeatherAPI_CSharp.APIClient.html).

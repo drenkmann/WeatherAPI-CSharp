@@ -11,11 +11,11 @@
     <Description>
       This is a small wrapper library to be used with the weatherapi.com API. It is a much simpler alternative to the official library, with the goal to make building any kind of weather app much simpler.
     </Description>
-    <Authors>underthefoxtree</Authors>
+    <Authors>drenkmann</Authors>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/underthefoxtree/WeatherAPI-CSharp</RepositoryUrl>
+    <RepositoryUrl>https://github.com/drenkmann/WeatherAPI-CSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
   <ItemGroup>
