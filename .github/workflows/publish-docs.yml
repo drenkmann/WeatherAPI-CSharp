@@ -9,12 +9,12 @@ jobs:
     steps:
     - name: Chekout
       uses: actions/checkout@v3
-    - name: Dotnet 8 Setup
+    - name: Dotnet 9 Setup
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 8.0.101
+        dotnet-version: 9.0.100
 
-    - run: dotnet new globaljson --sdk-version 8.0.101
+    - run: dotnet new globaljson --sdk-version 9.0.100
     - run: dotnet build
     - run: dotnet tool update -g docfx
     - run: docfx docs/docfx.json
