@@ -122,7 +122,11 @@ public class APITests
 	public async Task TestGetCurrentDataWithIpLookup()
 	{
 		var client = new APIClient(apiKey, true);
-		var weather = await client.GetWeatherCurrentAsync(client.GetLocationDataByIpAsync().Result.City, true);
+		var location = await client.GetLocationDataByIpAsync();
+
+		Assert.True(location.Valid);
+
+		var weather = await client.GetWeatherCurrentAsync($"{location.Latitude},{location.Longitude}", true);
 
 		output.WriteLine(weather.ToString());
 
