@@ -2,12 +2,9 @@ using Xunit.Abstractions;
 
 namespace WeatherAPI_CSharp.Tests;
 
-public class APITests
+public class APITests(ITestOutputHelper output)
 {
-	private readonly ITestOutputHelper output;
-	private const string apiKey = "YOUR-API-KEY";
-
-	public APITests(ITestOutputHelper output) => this.output = output;
+	private readonly ITestOutputHelper output = output;
 
 	[Fact]
 	public async Task TestGetWeatherCurrentAsync()
@@ -19,6 +16,30 @@ public class APITests
 
 		Assert.True(weather.Valid);
 		Assert.True(weather.AirQuality.Valid);
+		Assert.NotEqual(default, weather.AirQuality.CO);
+		Assert.NotEqual(default, weather.AirQuality.O3);
+		Assert.NotEqual(default, weather.AirQuality.NO2);
+		Assert.NotEqual(default, weather.AirQuality.SO2);
+		Assert.NotEqual(default, weather.AirQuality.PM25);
+		Assert.NotEqual(default, weather.AirQuality.PM10);
+		Assert.NotEmpty(weather.AirQuality.UsIndexMeaning);
+		Assert.NotEmpty(weather.AirQuality.GbIndexMeaning);
+		Assert.InRange(weather.TemperatureCelsius, -100, 100);
+		Assert.NotEmpty(weather.ConditionText);
+		Assert.InRange(weather.WindKph, 0, 200);
+	}
+
+	[Fact]
+	public async Task TestCurrentForecastNoAirQuality()
+	{
+		var client = new APIClient(apiKey, true);
+		var weather = await client.GetWeatherCurrentAsync("Berlin", false);
+
+		output.WriteLine(weather.ToString());
+
+		Assert.True(weather.Valid);
+		Assert.Equal(default, weather.AirQuality);
+		Assert.False(weather.AirQuality.Valid);
 		Assert.InRange(weather.TemperatureCelsius, -100, 100);
 		Assert.NotEmpty(weather.ConditionText);
 		Assert.InRange(weather.WindKph, 0, 200);

@@ -1,5 +1,6 @@
 using System.Net;
 using Newtonsoft.Json;
+using WeatherAPI_CSharp.Utils;
 
 /// <summary>
 /// Holds all classes needed to make API requests
@@ -9,21 +10,15 @@ namespace WeatherAPI_CSharp;
 /// <summary>
 /// Client to make requests to weather api
 /// </summary>
-public class APIClient
+/// <remarks>
+/// Create APIClient with optional <paramref name="useHttps"/> parameter
+/// </remarks>
+/// <param name="apiKey">Your API key</param>
+/// <param name="useHttps"><c>true</c>: Use https, <c>false</c>: Use http</param>
+public class APIClient(string apiKey, bool useHttps = false)
 {
-	private readonly string _apiKey;
-	private readonly bool _useHttps;
-
-	/// <summary>
-	/// Create APIClient with optional <paramref name="useHttps"/> parameter
-	/// </summary>
-	/// <param name="apiKey">Your API key</param>
-	/// <param name="useHttps"><c>true</c>: Use https, <c>false</c>: Use http</param>
-	public APIClient(string apiKey, bool useHttps = false)
-	{
-		_apiKey = apiKey;
-		_useHttps = useHttps;
-	}
+	private readonly string _apiKey = apiKey;
+	private readonly bool _useHttps = useHttps;
 
 	/// <summary>
 	/// Get Current weather at <paramref name="query" /> location
@@ -34,17 +29,14 @@ public class APIClient
 	/// <remarks>Returns default on http error. In this case, Forecast.Valid will be false.</remarks>
 	public async Task<Forecast> GetWeatherCurrentAsync(string query, bool getAirData = false)
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/current.json?key={_apiKey}&q={query}&aqi={(getAirData ? "yes" : "no")}");
+		var uri = UrlConstructor.GetCurrentWeatherUri(_apiKey, _useHttps, query, getAirData);
 
 		using var client = new HttpClient();
 
 		try
 		{
 			var jsonResponse = await client.GetStringAsync(uri);
-			dynamic jsonData = JsonConvert.DeserializeObject(jsonResponse)!;
-			if (jsonData is null)
-				throw new NullReferenceException();
-
+			dynamic jsonData = JsonConvert.DeserializeObject(jsonResponse)! ?? throw new NullReferenceException();
 			return new Forecast(jsonData.current, getAirData);
 		}
 		catch (HttpRequestException e)
@@ -70,18 +62,14 @@ public class APIClient
 	/// <remarks>Returns default on http error. In this case, ForecastDaily[0].Valid will be false.</remarks>
 	public async Task<ForecastDaily[]> GetWeatherForecastDailyAsync(string query, int days = 3)
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={days}");
+		var uri = UrlConstructor.GetForecastWeatherUri(_apiKey, _useHttps, query, days, false);
 
 		using var client = new HttpClient();
 
 		try
 		{
 			var jsonResponse = await client.GetStringAsync(uri);
-			dynamic jsonData = JsonConvert.DeserializeObject(jsonResponse)!;
-
-			if (jsonData is null)
-				throw new NullReferenceException();
-
+			dynamic jsonData = JsonConvert.DeserializeObject(jsonResponse)! ?? throw new NullReferenceException();
 			var forecasts = new ForecastDaily[days];
 			var index = 0;
 
@@ -103,7 +91,7 @@ public class APIClient
 				HttpStatusCode.NotFound => "Error 404 - Not Found.",
 				_ => $"Error {e.StatusCode}"
 			});
-			return new ForecastDaily[] { default };
+			return [default];
 		}
 	}
 
@@ -116,18 +104,14 @@ public class APIClient
 	/// <remarks>Returns default on http error. In this case, ForecastHourly[0].Valid will be false.</remarks>
 	public async Task<ForecastHourly[]> GetWeatherForecastHourlyAsync(string query, int hours = 24)
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/forecast.json?key={_apiKey}&q={query}&days={Math.Ceiling(hours / 24d)}");
+		var uri = UrlConstructor.GetForecastWeatherUri(_apiKey, _useHttps, query, (int)Math.Ceiling(hours / 24d), false);
 
 		using var client = new HttpClient();
 
 		try
 		{
 			var jsonResponse = await client.GetStringAsync(uri);
-			dynamic jsonData = JsonConvert.DeserializeObject(jsonResponse)!;
-
-			if (jsonData is null)
-				throw new NullReferenceException();
-
+			dynamic jsonData = JsonConvert.DeserializeObject(jsonResponse)! ?? throw new NullReferenceException();
 			var forecasts = new ForecastHourly[hours];
 			var index = 0;
 
@@ -154,7 +138,7 @@ public class APIClient
 				HttpStatusCode.NotFound => "Error 404 - Not Found.",
 				_ => $"Error {e.StatusCode}"
 			});
-			return new ForecastHourly[] { default };
+			return [default];
 		}
 	}
 
@@ -164,18 +148,14 @@ public class APIClient
 	/// <returns><see cref="LocationData"/> object containing the location</returns>
 	public async Task<LocationData> GetLocationDataByIpAsync()
 	{
-		var uri = new Uri($"{(_useHttps ? "https" : "http")}://api.weatherapi.com/v1/ip.json?key={_apiKey}&q=auto:ip");
+		var uri = UrlConstructor.GetIpLocationUri(_apiKey, _useHttps);
 
 		using var client = new HttpClient();
 
 		try
 		{
 			var jsonResponse = await client.GetStringAsync(uri);
-			dynamic jsonData = JsonConvert.DeserializeObject(jsonResponse)!;
-
-			if (jsonData is null)
-				throw new NullReferenceException();
-
+			dynamic jsonData = JsonConvert.DeserializeObject(jsonResponse)! ?? throw new NullReferenceException();
 			return new LocationData(jsonData);
 		}
 		catch (HttpRequestException e)
